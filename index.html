@@ -1,0 +1,3202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanthi Dental Care — Dr. G. Jaganraj, B.D.S | General Dentist</title>
+  <meta name="description"
+    content="At Shanthi Dental Care, Dr. G. Jaganraj, B.D.S (8 Years of Clinical Experience) provides ethical, patient-centred dental care with clinical precision and modern treatment protocols.">
+  <link rel="icon" type="image/png" href="./Image/Logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+    :root {
+      --green: #4F7942;
+      --green-dark: #304c29;
+      --green-soft: #e9f0e5;
+      --rose: #b88773;
+      --rose-soft: #ead8cf;
+      --ivory: #faf7f0;
+      --cream: #f3eee5;
+      --ink: #253025;
+      --muted: #6f776d;
+      --white: #fffdf9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font: inherit;
+      border: 0;
+      background: none;
+    }
+
+    .nav {
+      position: fixed;
+      top: 18px;
+      left: 4%;
+      right: 4%;
+      z-index: 20;
+      height: 66px;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(250, 247, 240, .78);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(79, 121, 66, .12);
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(48, 76, 41, .08);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 44px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      border-radius: 10px;
+      display: block;
+      transition: transform .2s ease;
+    }
+
+    .logo:hover img {
+      transform: scale(1.04);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 28px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .navlinks a {
+      opacity: .65;
+    }
+
+    .navlinks a:hover {
+      opacity: 1;
+      color: var(--green);
+    }
+
+    .book {
+      padding: 12px 18px;
+      border-radius: 30px;
+      background: var(--green);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding: 140px 8% 80px;
+      background: var(--ivory);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero:before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      right: -180px;
+      top: 80px;
+      background: var(--green-soft);
+      opacity: .8;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7vw;
+      align-items: center;
+    }
+
+    .kicker {
+      font-size: 10px;
+      letter-spacing: .22em;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 7vw, 100px);
+      line-height: .94;
+      letter-spacing: -.065em;
+      margin: 20px 0;
+    }
+
+    .serif {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--rose);
+    }
+
+    .hero p {
+      max-width: 500px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .primary {
+      background: var(--green);
+      color: #fff;
+      padding: 16px 22px;
+      border-radius: 40px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .secondary {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 14px;
+      color: var(--green);
+    }
+
+    .hero-photo-wrap {
+      position: relative;
+    }
+
+    .hero-photo {
+      height: 650px;
+      border-radius: 34px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 28px 70px rgba(48, 76, 41, .16);
+      transform: rotate(1.5deg);
+      background: radial-gradient(circle at center, #ffffff 15%, var(--green-soft) 95%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 40px;
+      filter: drop-shadow(0 20px 35px rgba(48, 76, 41, .18));
+    }
+
+    .hero-photo:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 65%, rgba(48, 76, 41, .12));
+      pointer-events: none;
+    }
+
+    .float-card {
+      position: absolute;
+      z-index: 4;
+      left: -30px;
+      bottom: 45px;
+      background: rgba(255, 253, 249, .92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 16px 22px;
+      border-radius: 18px;
+      border: 1px solid rgba(184, 135, 115, .22);
+      box-shadow: 0 18px 45px rgba(48, 76, 41, .15);
+      white-space: nowrap;
+    }
+
+    .float-card strong {
+      font-size: 22px;
+      font-weight: 700;
+      display: block;
+      color: var(--green);
+    }
+
+    .float-card span {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .section {
+      padding: 120px 8%;
+    }
+
+    .label {
+      font-size: 10px;
+      letter-spacing: .2em;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: clamp(45px, 5.5vw, 76px);
+      line-height: 1;
+      letter-spacing: -.05em;
+      margin: 18px 0 55px;
+    }
+
+    /* ABOUT SECTION (Left Auto-Slider + Right Content) */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8vw;
+      align-items: center;
+    }
+
+    .about-slider-wrap {
+      height: 560px;
+      border-radius: 28px;
+      overflow: hidden;
+      position: relative;
+      cursor: zoom-in;
+      box-shadow: 0 24px 60px rgba(48, 76, 41, .15);
+      background: var(--green-soft);
+      user-select: none;
+    }
+
+    .about-slider-track {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .about-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.2s ease;
+      z-index: 1;
+    }
+
+    .about-slide.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+    }
+
+    .about-slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transform: scale(1.05);
+      transition: transform 10s linear;
+      display: block;
+    }
+
+    .about-slide.active .about-slide-img {
+      transform: scale(1);
+    }
+
+    .about-slider-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      z-index: 10;
+      pointer-events: auto;
+    }
+
+    .about-dot {
+      position: relative;
+      width: 28px;
+      height: 5px;
+      border-radius: 4px;
+      background: rgba(255, 253, 249, 0.45);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      overflow: hidden;
+      transition: width 0.35s ease, background 0.35s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-dot:hover {
+      background: rgba(255, 253, 249, 0.8);
+    }
+
+    .about-dot.active {
+      width: 44px;
+      background: rgba(255, 253, 249, 0.4);
+    }
+
+    .about-dot .about-dot-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      background: var(--green);
+      border-radius: 4px;
+      transform-origin: left center;
+    }
+
+    .about-dot.active .about-dot-progress {
+      width: 100%;
+      transition: width 10s linear;
+    }
+
+    .about p {
+      color: var(--muted);
+      line-height: 1.9;
+      max-width: 500px;
+    }
+
+    /* ── About slider prev/next arrow buttons ── */
+    .about-slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 12;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 253, 249, 0.18);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 253, 249, 0.3);
+      color: #fffdf9;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 300ms ease, transform 300ms ease, opacity 300ms ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .about-slider-wrap:hover .about-slider-nav,
+    .about-slider-wrap:focus-within .about-slider-nav {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .about-slider-nav:hover {
+      background: rgba(79, 121, 66, 0.55);
+      border-color: rgba(184, 135, 115, 0.5);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    .about-slider-nav:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    .about-slider-prev {
+      left: 12px;
+    }
+
+    .about-slider-next {
+      right: 12px;
+    }
+
+    .doctor-profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 24px 0 20px;
+      padding: 16px 20px;
+      background: rgba(79, 121, 66, .08);
+      border-left: 4px solid var(--green);
+      border-radius: 14px;
+      border-top: 1px solid rgba(79, 121, 66, .12);
+      border-right: 1px solid rgba(79, 121, 66, .12);
+      border-bottom: 1px solid rgba(79, 121, 66, .12);
+      max-width: 500px;
+    }
+
+    .doctor-profile .dr-badge-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--green);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      box-shadow: 0 6px 15px rgba(48, 76, 41, .2);
+    }
+
+    .doctor-profile h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -.02em;
+    }
+
+    .doctor-profile .dr-subtitle {
+      margin: 4px 0 0;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green-dark);
+      letter-spacing: .02em;
+    }
+
+    .numbers {
+      display: flex;
+      gap: 35px;
+      margin-top: 40px;
+    }
+
+    .numbers strong {
+      font-size: 30px;
+      display: block;
+      color: var(--green);
+    }
+
+    .numbers small {
+      font-size: 9px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    /* TREATMENTS SECTION */
+    .treatments {
+      background: var(--green-soft);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255, 253, 249, .72);
+      border: 1px solid rgba(255, 255, 255, .9);
+      border-radius: 22px;
+      padding: 10px;
+      transition: transform 450ms ease-out, box-shadow 450ms ease-out, border-color 450ms ease-out;
+      cursor: zoom-in;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover,
+    .card:focus-within,
+    .card.card--active {
+      transform: translateY(-8px);
+      box-shadow: 0 22px 55px rgba(48, 76, 41, .14), 0 4px 16px rgba(184, 135, 115, .10);
+      border-color: rgba(184, 135, 115, .38);
+    }
+
+    /* ── Image wrapper: clips zoom + positions the overlay ── */
+    .card-img-wrap {
+      border-radius: 17px;
+      overflow: hidden;
+      position: relative;
+      /* overlay anchors here */
+      flex-shrink: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 17px;
+      display: block;
+      transition: transform 480ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        filter 450ms ease-out;
+    }
+
+    /* Blur the image on hover */
+    .card:hover .card-img-wrap img,
+    .card:focus-within .card-img-wrap img,
+    .card.card--active .card-img-wrap img {
+      transform: scale(1.06);
+      filter: blur(3px) brightness(0.72);
+    }
+
+    /* ── Overlay panel that appears over the blurred image ── */
+    .card-extra {
+      position: absolute;
+      inset: 0;
+      /* covers the full image */
+      display: flex;
+      align-items: flex-end;
+      /* text anchored to bottom */
+      padding: 18px 16px 20px;
+      background: linear-gradient(to top,
+          rgba(30, 48, 28, 0.88) 0%,
+          rgba(30, 48, 28, 0.55) 55%,
+          rgba(30, 48, 28, 0.0) 100%);
+      border-radius: 17px;
+      /* hidden state */
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 440ms ease-out, transform 440ms ease-out;
+      pointer-events: none;
+      margin: 0;
+    }
+
+    .card-extra-text {
+      color: #fffdf9;
+      font-size: 12.5px;
+      line-height: 1.65;
+      font-weight: 400;
+      letter-spacing: .01em;
+      /* subtle rose-gold accent line */
+      border-left: 2px solid rgba(184, 135, 115, 0.75);
+      padding-left: 10px;
+    }
+
+    /* Reveal on hover / focus / active */
+    .card:hover .card-extra,
+    .card:focus-within .card-extra,
+    .card.card--active .card-extra {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .card-content {
+      padding: 18px 18px 14px;
+    }
+
+    .card-content small {
+      color: var(--rose);
+      font-weight: 700;
+    }
+
+    .card h3 {
+      margin: 10px 0 7px;
+      font-size: 19px;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ==========================================================================
+       SECTION 03: REAL RESULTS SHOWCASE GALLERY (#work)
+       ========================================================================== */
+    .work {
+      background: var(--green-dark);
+      color: white;
+      padding: 110px 8% 90px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .work-header {
+      margin-bottom: 36px;
+    }
+
+    .work .label {
+      color: var(--rose-soft);
+    }
+
+    .work .title {
+      margin: 14px 0 16px;
+    }
+
+    .work .serif {
+      color: var(--rose-soft);
+    }
+
+    .work-subtitle {
+      max-width: 640px;
+      color: #cfdbce;
+      line-height: 1.7;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    /* ── Main Showcase Container ── */
+    .work-showcase {
+      position: relative;
+      width: 100%;
+      min-height: 520px;
+      background: #182817;
+      border-radius: 28px;
+      border: 1px solid rgba(184, 135, 115, 0.28);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    /* ── Slide Panels ── */
+    .work-slide {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      padding: 32px 40px;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.7s ease;
+      z-index: 1;
+    }
+
+    .work-slide.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+    }
+
+    /* ── Media Frame (1:1 Natural Square Aspect Ratio) ── */
+    .work-slide-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-height: 450px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: #111e10;
+      border: 1px solid rgba(184, 135, 115, 0.35);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .work-slide-media picture,
+    .work-slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .work-slide:hover .work-slide-img {
+      transform: scale(1.03);
+    }
+
+    /* ── Content Side ── */
+    .work-slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 20px;
+    }
+
+    .work-slide-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--rose-soft);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .work-slide-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(26px, 2.8vw, 36px);
+      font-weight: 500;
+      line-height: 1.2;
+      color: #fff;
+      margin: 0 0 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .work-slide-desc {
+      font-size: 14.5px;
+      color: #d6e0d4;
+      line-height: 1.7;
+      margin: 0 0 20px;
+    }
+
+    .work-slide-points {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .work-slide-points li {
+      font-size: 13.5px;
+      color: #e6ede4;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .work-slide-actions .primary {
+      display: inline-flex;
+      align-items: center;
+      padding: 13px 26px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* ── Nav Buttons ── */
+    .work-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(250, 247, 240, 0.14);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(234, 216, 207, 0.28);
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .work-nav-btn:hover {
+      background: var(--green);
+      border-color: var(--green);
+      transform: translateY(-50%) scale(1.08);
+      box-shadow: 0 8px 24px rgba(79, 121, 66, 0.45);
+    }
+
+    .work-nav-btn.prev { left: 14px; }
+    .work-nav-btn.next { right: 14px; }
+
+    /* ── Gallery Footer & Thumbnail Strip ── */
+    .work-gallery-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 10px;
+    }
+
+    .work-thumb-strip {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+    }
+
+    .work-thumb-card {
+      background: rgba(25, 39, 24, 0.7);
+      border: 1px solid rgba(184, 135, 115, 0.2);
+      border-radius: 14px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .work-thumb-card:hover {
+      background: rgba(35, 55, 34, 0.9);
+      border-color: rgba(184, 135, 115, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .work-thumb-card.active {
+      background: rgba(45, 70, 44, 0.95);
+      border-color: var(--rose);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 0 1px var(--rose);
+    }
+
+    .work-thumb-card img {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .work-thumb-info {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .work-thumb-info small {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: var(--rose-soft);
+      letter-spacing: 0.1em;
+    }
+
+    .work-thumb-info span {
+      font-size: 11.5px;
+      color: #fff;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .work-progress-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 4px 0;
+    }
+
+    /* CONTACT SECTION */
+    .contact {
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10vw;
+    }
+
+    .contact h2 {
+      font-size: clamp(50px, 6vw, 85px);
+      line-height: .96;
+      margin: 18px 0;
+    }
+
+    .contact p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .details {
+      border-top: 1px solid rgba(79, 121, 66, .18);
+    }
+
+    .detail {
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(79, 121, 66, .18);
+    }
+
+    .detail small {
+      font-size: 9px;
+      letter-spacing: .17em;
+      color: var(--green);
+    }
+
+    .detail p,
+    .detail a {
+      font-size: 14px;
+      color: var(--ink);
+      margin: 8px 0;
+    }
+
+    footer {
+      padding: 55px 8% 25px;
+      background: #23351f;
+      color: #e7eee2;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 50px;
+    }
+
+    .footer p {
+      color: #aebaa9;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .copy {
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      padding-top: 20px;
+      color: #94a38e;
+      font-size: 9px;
+    }
+
+    /* ==========================================================================
+       INTERACTIVE DENTAL CONCIERGE & CHAT ASSISTANT
+       ========================================================================== */
+    .chat {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      z-index: 40;
+      background: var(--green);
+      color: white;
+      box-shadow: 0 16px 36px rgba(48, 76, 41, .35), 0 0 0 1px rgba(184, 135, 115, 0.3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .35s cubic-bezier(.34, 1.56, .64, 1);
+      border: none;
+    }
+
+    .chat:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 20px 45px rgba(48, 76, 41, .45);
+      background: #3c5e32;
+    }
+
+    .chat-pulse {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid var(--rose);
+      animation: chat-pulse-anim 2.5s infinite ease-out;
+      pointer-events: none;
+    }
+
+    @keyframes chat-pulse-anim {
+      0% { transform: scale(1); opacity: 0.8; }
+      70% { transform: scale(1.35); opacity: 0; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    /* ── Concierge Drawer Box ── */
+    .chatbox {
+      position: fixed;
+      right: 24px;
+      bottom: 96px;
+      width: 380px;
+      max-width: calc(100vw - 32px);
+      max-height: 580px;
+      z-index: 39;
+      background: rgba(255, 253, 249, 0.96);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(184, 135, 115, 0.35);
+      border-radius: 24px;
+      box-shadow: 0 25px 75px rgba(30, 48, 28, 0.28), 0 4px 16px rgba(184, 135, 115, 0.12);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px) scale(0.96);
+      transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chatbox.open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    /* ── Header ── */
+    .chatbox-header {
+      padding: 16px 18px;
+      background: var(--green-dark);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(184, 135, 115, 0.25);
+    }
+
+    .chatbox-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .chatbox-avatar {
+      font-size: 24px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .chatbox-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      font-family: var(--font-sans);
+    }
+
+    .chatbox-subtitle {
+      font-size: 11px;
+      color: var(--rose-soft);
+      display: block;
+      margin-top: 1px;
+    }
+
+    .chatbox-close {
+      background: rgba(255, 255, 255, 0.12);
+      border: none;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .chatbox-close:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    /* ── Live Status Bar ── */
+    .chatbox-status-bar {
+      padding: 8px 18px;
+      background: rgba(79, 121, 66, 0.1);
+      border-bottom: 1px solid rgba(79, 121, 66, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--green-dark);
+    }
+
+    .status-indicator-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2e7d32;
+      box-shadow: 0 0 6px #2e7d32;
+      display: inline-block;
+    }
+
+    .status-indicator-dot.closed {
+      background: #c62828;
+      box-shadow: 0 0 6px #c62828;
+    }
+
+    /* ── Tabs ── */
+    .chatbox-tabs {
+      display: flex;
+      background: rgba(234, 216, 207, 0.35);
+      border-bottom: 1px solid rgba(184, 135, 115, 0.2);
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .chatbox-tab {
+      flex: 1;
+      padding: 8px 4px;
+      border: none;
+      background: transparent;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+
+    .chatbox-tab.active {
+      background: #fff;
+      color: var(--green-dark);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Panels ── */
+    .chatbox-panel {
+      display: none;
+      padding: 16px 18px;
+      overflow-y: auto;
+      max-height: 380px;
+    }
+
+    .chatbox-panel.active {
+      display: block;
+    }
+
+    .chatbox-section-intro {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 12px;
+      line-height: 1.5;
+    }
+
+    /* Hours Card */
+    .hours-card {
+      background: #fff;
+      border: 1px solid rgba(184, 135, 115, 0.25);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+
+    .hours-row {
+      padding: 12px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+
+    .hours-row.highlight {
+      background: rgba(79, 121, 66, 0.05);
+    }
+
+    .hours-day strong {
+      display: block;
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    .hours-day small {
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    .hours-time {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .chatbox-tip {
+      display: flex;
+      gap: 8px;
+      background: rgba(234, 216, 207, 0.35);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 11.5px;
+      line-height: 1.55;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+
+    .chatbox-tip p { margin: 0; }
+
+    /* Quick Actions */
+    .chatbox-quick-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chatbox-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      border-radius: 12px;
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .chatbox-btn.primary {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .chatbox-btn.primary:hover {
+      background: #3c5e32;
+    }
+
+    .chatbox-btn.secondary {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .chatbox-btn.secondary:hover {
+      background: rgba(79, 121, 66, 0.2);
+    }
+
+    .chatbox-btn.outline {
+      background: #fff;
+      border: 1px solid rgba(184, 135, 115, 0.4);
+      color: var(--ink);
+    }
+
+    .chatbox-btn.outline:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    /* Treatment List in Assistant */
+    .chat-treatment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chat-treatment-item {
+      background: #fff;
+      border: 1px solid rgba(184, 135, 115, 0.22);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .chat-treatment-item[open] {
+      border-color: rgba(79, 121, 66, 0.5);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .chat-treatment-item summary {
+      padding: 10px 12px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      user-select: none;
+      list-style: none;
+    }
+
+    .chat-treatment-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .item-num {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--rose);
+      background: rgba(184, 135, 115, 0.15);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .item-name {
+      flex: 1;
+    }
+
+    .item-arrow {
+      font-size: 12px;
+      color: var(--muted);
+      transition: transform 0.2s;
+    }
+
+    .chat-treatment-item[open] .item-arrow {
+      transform: rotate(180deg);
+    }
+
+    .item-body {
+      padding: 0 12px 12px;
+      font-size: 12px;
+      color: #4a5548;
+      line-height: 1.55;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      padding-top: 8px;
+    }
+
+    .item-body p { margin: 0 0 8px; }
+
+    .item-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .item-tags span {
+      font-size: 10px;
+      background: var(--green-soft);
+      color: var(--green);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .item-link {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    /* Location Card */
+    .chat-location-card {
+      background: #fff;
+      border: 1px solid rgba(184, 135, 115, 0.25);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .loc-badge {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: var(--rose);
+      letter-spacing: 0.12em;
+      margin-bottom: 6px;
+    }
+
+    .chat-location-card p {
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--ink);
+      margin: 0 0 12px;
+    }
+
+    .landmark-tag {
+      display: block;
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN (Desktop -> Tablet -> Mobile)
+       ========================================================================== */
+
+    /* ── Large Tablets & Laptops (max-width: 1024px) ── */
+    @media(max-width: 1024px) {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .work-slide {
+        gap: 28px;
+        padding: 28px 32px;
+      }
+      .work-thumb-strip {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* ── Tablets & Small Laptops (max-width: 850px) ── */
+    @media(max-width: 850px) {
+      .navlinks {
+        display: none;
+      }
+
+      .section {
+        padding: 80px 5%;
+      }
+
+      .nav {
+        left: 3%;
+        right: 3%;
+      }
+
+      .hero-grid,
+      .about,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .hero-photo {
+        height: 440px;
+        margin-top: 10px;
+      }
+
+      .about-slider-wrap {
+        height: 420px;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .work-slide {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+        gap: 22px;
+      }
+
+      .work-slide-media {
+        max-height: 380px;
+      }
+
+      .work-nav-btn {
+        top: 200px;
+      }
+
+      .work-thumb-strip {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* ── Mobile Devices (max-width: 580px) ── */
+    @media(max-width: 580px) {
+      .nav {
+        padding: 10px 16px;
+        top: 12px;
+      }
+
+      .nav .logo img {
+        height: 28px;
+      }
+
+      .nav-contact .btn {
+        padding: 8px 14px;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 100px 5% 45px;
+      }
+
+      .hero h1 {
+        font-size: clamp(32px, 8.5vw, 42px);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      .hero-text p {
+        font-size: 14px;
+        line-height: 1.65;
+        margin: 14px 0 22px;
+      }
+
+      .hero-photo {
+        height: 340px;
+        border-radius: 20px;
+      }
+
+      .float-card {
+        bottom: 16px;
+        left: 14px;
+        padding: 10px 14px;
+      }
+
+      .float-card strong {
+        font-size: 12px;
+      }
+
+      /* Section 01: About */
+      .about-slider-wrap {
+        height: 320px;
+        border-radius: 18px;
+      }
+
+      .about .title {
+        font-size: clamp(28px, 7.5vw, 36px);
+      }
+
+      .doctor-profile {
+        padding: 12px 14px;
+      }
+
+      .numbers {
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .numbers strong {
+        font-size: 22px;
+      }
+
+      .numbers small {
+        font-size: 10px;
+      }
+
+      /* Section 02: Treatments (Single Clean Column for Mobile) */
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .card {
+        border-radius: 18px;
+        padding: 8px;
+      }
+
+      .card img {
+        height: 190px;
+        border-radius: 14px;
+      }
+
+      .card-content {
+        padding: 12px 6px 4px;
+      }
+
+      .card-content h3 {
+        font-size: 18px;
+        margin: 4px 0 4px;
+      }
+
+      .card-content p {
+        font-size: 12.5px;
+        line-height: 1.55;
+      }
+
+      .card-extra {
+        padding: 14px 14px 16px;
+        border-radius: 14px;
+      }
+
+      .card-extra-text {
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      /* Section 03: Real Results Showcase Gallery */
+      .work {
+        padding: 70px 5% 55px;
+      }
+
+      .work-header {
+        margin-bottom: 24px;
+      }
+
+      .work .title {
+        font-size: clamp(28px, 7.5vw, 38px);
+      }
+
+      .work-subtitle {
+        font-size: 13.5px;
+      }
+
+      .work-showcase {
+        min-height: 620px;
+        border-radius: 20px;
+        margin-bottom: 16px;
+      }
+
+      .work-slide {
+        padding: 16px 14px 20px;
+        gap: 14px;
+      }
+
+      .work-slide-media {
+        max-height: 280px;
+        border-radius: 14px;
+      }
+
+      .work-nav-btn {
+        top: 155px;
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+      }
+
+      .work-nav-btn.prev { left: 8px; }
+      .work-nav-btn.next { right: 8px; }
+
+      .work-slide-content {
+        padding-right: 0;
+      }
+
+      .work-slide-badge {
+        font-size: 10px;
+        margin-bottom: 8px;
+      }
+
+      .work-slide-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+        line-height: 1.25;
+      }
+
+      .work-slide-desc {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+
+      .work-slide-points {
+        gap: 7px;
+        margin-bottom: 18px;
+      }
+
+      .work-slide-points li {
+        font-size: 12px;
+      }
+
+      .work-slide-actions .primary {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 18px;
+        font-size: 12.5px;
+      }
+
+      /* Horizontal Scrollable Thumbnail Strip for Mobile */
+      .work-thumb-strip {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 8px;
+        padding: 4px 2px 10px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .work-thumb-strip::-webkit-scrollbar {
+        display: none;
+      }
+
+      .work-thumb-card {
+        flex: 0 0 135px;
+        scroll-snap-align: start;
+        padding: 6px 8px;
+        border-radius: 10px;
+      }
+
+      .work-thumb-card img {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+      }
+
+      .work-thumb-info small {
+        font-size: 8.5px;
+      }
+
+      .work-thumb-info span {
+        font-size: 10.5px;
+      }
+
+      .work-progress-bar {
+        padding: 0;
+      }
+
+      .slider-dot {
+        width: 22px;
+        height: 4px;
+      }
+
+      .slider-dot.active {
+        width: 36px;
+      }
+
+      .slider-timer-indicator {
+        padding: 4px 8px;
+      }
+
+      .timer-tag {
+        font-size: 9px;
+      }
+
+      /* Section 05: Contact */
+      .contact h2 {
+        font-size: clamp(34px, 8.5vw, 44px);
+        line-height: 1.05;
+      }
+
+      .contact-grid {
+        gap: 28px;
+      }
+
+      .detail {
+        padding: 16px 0;
+      }
+
+      .detail p {
+        font-size: 13.5px;
+      }
+
+      /* Footer */
+      footer {
+        padding: 40px 5% 20px;
+      }
+
+      .chatbox {
+        right: 10px;
+        left: 10px;
+        width: auto;
+        bottom: 74px;
+      }
+
+      .chat {
+        right: 14px;
+        bottom: 14px;
+        padding: 12px 18px;
+        font-size: 12px;
+      }
+    }
+
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+
+      .slide-image,
+      .about-slide-img {
+        transform: none !important;
+        transition: none !important;
+      }
+
+      .slider-dot.active .dot-progress,
+      .about-dot.active .about-dot-progress {
+        transition: none !important;
+      }
+
+      .reveal,
+      .hero-text>* {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <a class="logo" href="#" aria-label="Shanthi Dental Care">
+      <img src="./Image/Logo.png" alt="Shanthi Dental Care">
+    </a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#work">Our Clinic</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="book" href="#contact">Book Appointment ↗</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="kicker">SHANTHI DENTAL CARE · DR. G. JAGANRAJ, B.D.S</div>
+        <h1>A healthier smile.<br><span class="serif">Beautifully cared for.</span></h1>
+        <p>Ethical, patient-centred dental care with a strong focus on clinical precision, quality materials and modern
+          treatment protocols.</p>
+        <div class="actions">
+          <a class="primary" href="#contact">Book an Appointment ↗</a>
+          <a class="secondary" href="#treatments">Explore Treatments ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="./Image/Hero.png" alt="Shanthi Dental Care">
+        </div>
+        <div class="float-card">
+          <strong>8+ Years</strong>
+          <span>CLINICAL EXPERIENCE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 01: ABOUT US & LEAD DENTIST (Left: Automatic Clinic Photo Slider) -->
+  <section id="about" class="section">
+    <div class="about">
+      <div class="about-slider-wrap reveal" id="aboutSlider" aria-roledescription="carousel"
+        aria-label="Shanthi Dental Care Clinic Tour">
+        <div class="about-slider-track">
+          <!-- Slide 1: clinic-01 -->
+          <div class="about-slide active" data-about-slide="0" role="group" aria-roledescription="slide"
+            aria-label="Slide 1 of 7: Operatory Suite">
+            <picture>
+              <source
+                srcset="./Image/clinic-01-600w.webp 600w, ./Image/clinic-01-1200w.webp 1200w, ./Image/clinic-01.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-01-1200w.webp" alt="Shanthi Dental Care - Modern Operatory &amp; Patient Suite"
+                class="about-slide-img" width="1200" height="1600" loading="eager" decoding="async">
+            </picture>
+          </div>
+
+          <!-- Slide 2: clinic-02 -->
+          <div class="about-slide" data-about-slide="1" role="group" aria-roledescription="slide"
+            aria-label="Slide 2 of 7: Reception Lounge">
+            <picture>
+              <source
+                srcset="./Image/clinic-02-600w.webp 600w, ./Image/clinic-02-1200w.webp 1200w, ./Image/clinic-02.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-02-1200w.webp" alt="Shanthi Dental Care - Clinic Reception Lounge &amp; Entrance"
+                class="about-slide-img" width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <!-- Slide 3: clinic-03 -->
+          <div class="about-slide" data-about-slide="2" role="group" aria-roledescription="slide"
+            aria-label="Slide 3 of 7: Sterilization &amp; Setup">
+            <picture>
+              <source
+                srcset="./Image/clinic-03-600w.webp 600w, ./Image/clinic-03-1200w.webp 1200w, ./Image/clinic-03.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-03-1200w.webp"
+                alt="Shanthi Dental Care - Clinical Precision &amp; Sterilization Equipment" class="about-slide-img"
+                width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <!-- Slide 4: clinic-04 -->
+          <div class="about-slide" data-about-slide="3" role="group" aria-roledescription="slide"
+            aria-label="Slide 4 of 7: Consultation &amp; Care">
+            <picture>
+              <source
+                srcset="./Image/clinic-04-600w.webp 600w, ./Image/clinic-04-1200w.webp 1200w, ./Image/clinic-04.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-04-1200w.webp" alt="Shanthi Dental Care - Consultation &amp; Care Area"
+                class="about-slide-img" width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <!-- Slide 5: clinic-05 (new) -->
+          <div class="about-slide" data-about-slide="4" role="group" aria-roledescription="slide"
+            aria-label="Slide 5 of 7: Clinic Interior">
+            <picture>
+              <source
+                srcset="./Image/clinic-05-600w.webp 600w, ./Image/clinic-05-1200w.webp 1200w, ./Image/clinic-05.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-05-1200w.webp" alt="Shanthi Dental Care - Clinic Interior"
+                class="about-slide-img" width="1200" height="1600" loading="lazy" decoding="async"
+                title="Click to view full screen">
+            </picture>
+          </div>
+
+          <!-- Slide 6: clinic-06 (new) -->
+          <div class="about-slide" data-about-slide="5" role="group" aria-roledescription="slide"
+            aria-label="Slide 6 of 7: Clinic View">
+            <picture>
+              <source
+                srcset="./Image/clinic-06-600w.webp 600w, ./Image/clinic-06-1200w.webp 1200w, ./Image/clinic-06.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-06-1200w.webp" alt="Shanthi Dental Care - Clinic View" class="about-slide-img"
+                width="1200" height="1600" loading="lazy" decoding="async" title="Click to view full screen">
+            </picture>
+          </div>
+
+          <!-- Slide 7: clinic-07 (new) -->
+          <div class="about-slide" data-about-slide="6" role="group" aria-roledescription="slide"
+            aria-label="Slide 7 of 7: Dental Suite">
+            <picture>
+              <source
+                srcset="./Image/clinic-07-600w.webp 600w, ./Image/clinic-07-1200w.webp 1200w, ./Image/clinic-07.webp 3024w"
+                sizes="(max-width: 850px) 90vw, 45vw" type="image/webp">
+              <img src="./Image/clinic-07-1200w.webp" alt="Shanthi Dental Care - Dental Suite" class="about-slide-img"
+                width="1200" height="1600" loading="lazy" decoding="async" title="Click to view full screen">
+            </picture>
+          </div>
+        </div>
+
+        <!-- Prev / Next arrow buttons -->
+        <button class="about-slider-nav about-slider-prev" id="aboutPrev" aria-label="Previous slide">
+          <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 1.5L1.5 8L8.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="about-slider-nav about-slider-next" id="aboutNext" aria-label="Next slide">
+          <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 1.5L8.5 8L1.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <!-- Minimal Pagination Dots -->
+        <div class="about-slider-dots" id="aboutDots" role="tablist" aria-label="About clinic slider pagination">
+          <button class="about-dot active" data-about-index="0" role="tab" aria-selected="true"
+            aria-label="Slide 1"><span class="about-dot-progress"></span></button>
+          <button class="about-dot" data-about-index="1" role="tab" aria-selected="false" aria-label="Slide 2"><span
+              class="about-dot-progress"></span></button>
+          <button class="about-dot" data-about-index="2" role="tab" aria-selected="false" aria-label="Slide 3"><span
+              class="about-dot-progress"></span></button>
+          <button class="about-dot" data-about-index="3" role="tab" aria-selected="false" aria-label="Slide 4"><span
+              class="about-dot-progress"></span></button>
+          <button class="about-dot" data-about-index="4" role="tab" aria-selected="false" aria-label="Slide 5"><span
+              class="about-dot-progress"></span></button>
+          <button class="about-dot" data-about-index="5" role="tab" aria-selected="false" aria-label="Slide 6"><span
+              class="about-dot-progress"></span></button>
+          <button class="about-dot" data-about-index="6" role="tab" aria-selected="false" aria-label="Slide 7"><span
+              class="about-dot-progress"></span></button>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="label">01 / ABOUT US &amp; LEAD DENTIST</div>
+        <h2 class="title">Care that feels <span class="serif">different.</span></h2>
+
+        <div class="doctor-profile">
+          <div class="dr-badge-icon">👨‍⚕️</div>
+          <div>
+            <h3>Dr. G. JAGANRAJ, B.D.S</h3>
+            <div class="dr-subtitle">General Dentist | 8 Years of Clinical Experience</div>
+          </div>
+        </div>
+
+        <p>At Shanthi Dental Care, we are committed to delivering ethical and patient-centred dental care with a strong
+          focus on clinical precision, quality materials and modern treatment protocols. Our approach combines
+          professional expertise with compassionate and personalised care, ensuring every patient receives safe,
+          comfortable and reliable dental treatment.</p>
+
+        <div class="numbers">
+          <div><strong>8+</strong><small>Years Exp.</small></div>
+          <div><strong>500+</strong><small>Happy Patients</small></div>
+          <div><strong>100%</strong><small>Ethical Care</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: TREATMENTS & SPECIALTIES -->
+  <section id="treatments" class="section treatments">
+    <div class="label">02 / SPECIALTIES</div>
+    <h2 class="title">Complete Dental <span class="serif">Care.</span></h2>
+
+    <div class="cards">
+
+      <!-- 01 Consulting & X-ray -->
+      <article class="card reveal" tabindex="0" aria-label="Consulting &amp; X-ray. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-general.webp" alt="Consulting &amp; X-ray" loading="lazy" decoding="async"
+            width="700" height="467">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Complete dental consultation with diagnostic X-rays
+              to understand your oral health and treatment needs.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>01</small>
+          <h3>Consulting &amp; X-ray</h3>
+          <p>Thorough examination and digital diagnostics.</p>
+        </div>
+      </article>
+
+      <!-- 02 Dental Implants -->
+      <article class="card reveal" tabindex="0" aria-label="Dental Implants. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-implants.webp" alt="Dental Implants" loading="lazy" decoding="async" width="700"
+            height="467">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Natural-looking tooth replacement designed to restore
+              your smile, comfort and everyday function.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>02</small>
+          <h3>Dental Implants</h3>
+          <p>Permanent, natural-looking tooth replacement.</p>
+        </div>
+      </article>
+
+      <!-- 03 Teeth Cleaning -->
+      <article class="card reveal" tabindex="0" aria-label="Teeth Cleaning. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-cleaning.webp" alt="Teeth Cleaning" loading="lazy" decoding="async" width="700"
+            height="467">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Professional cleaning helps remove plaque and buildup
+              while supporting healthier teeth and gums.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>03</small>
+          <h3>Teeth Cleaning</h3>
+          <p>Professional scaling for a fresher, healthier smile.</p>
+        </div>
+      </article>
+
+      <!-- 04 Root Canal Treatments -->
+      <article class="card reveal" tabindex="0" aria-label="Root Canal Treatments. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-rootcanal.webp" alt="Root Canal Treatment" loading="lazy" decoding="async"
+            width="700" height="467">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Treat infected teeth while preserving the natural tooth
+              and helping restore comfortable function.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>04</small>
+          <h3>Root Canal Treatments</h3>
+          <p>Infection-free care that saves your natural tooth.</p>
+        </div>
+      </article>
+
+      <!-- 05 Braces & Aligners -->
+      <article class="card reveal" tabindex="0" aria-label="Braces &amp; Aligners. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-braces.webp" alt="Braces &amp; Aligners" loading="lazy" decoding="async"
+            width="700" height="467">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Modern orthodontic solutions designed to gradually
+              straighten teeth and improve your smile.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>05</small>
+          <h3>Braces &amp; Aligners</h3>
+          <p>Precision orthodontics for a straighter smile.</p>
+        </div>
+      </article>
+
+      <!-- 06 Crowns & Bridges -->
+      <article class="card reveal" tabindex="0" aria-label="Crowns &amp; Bridges. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-crowns.webp" alt="Crowns &amp; Bridges" loading="lazy" decoding="async"
+            width="1200" height="900">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Restore damaged or missing teeth with durable solutions
+              designed for strength, function and appearance.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>06</small>
+          <h3>Crowns &amp; Bridges</h3>
+          <p>Durable restorations for strength and function.</p>
+        </div>
+      </article>
+
+      <!-- 07 Kids Dentistry -->
+      <article class="card reveal" tabindex="0" aria-label="Kids Dentistry. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-kids.webp" alt="Kids Dentistry" loading="lazy" decoding="async" width="1200"
+            height="900">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Gentle, child-friendly dental care focused on healthy
+              teeth, positive experiences and preventive habits.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>07</small>
+          <h3>Kids Dentistry</h3>
+          <p>Gentle, fun care built for your little ones.</p>
+        </div>
+      </article>
+
+      <!-- 08 Tooth Coloured Fillings -->
+      <article class="card reveal" tabindex="0" aria-label="Tooth Coloured Fillings. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-fillings.webp" alt="Tooth Coloured Fillings" loading="lazy" decoding="async"
+            width="1200" height="900">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Natural-looking fillings repair cavities while blending
+              beautifully with the surrounding tooth structure.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>08</small>
+          <h3>Tooth Coloured Fillings</h3>
+          <p>Invisible cavity repair that matches your tooth.</p>
+        </div>
+      </article>
+
+      <!-- 09 Smile Designing -->
+      <article class="card reveal" tabindex="0" aria-label="Smile Designing. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-smile.webp" alt="Smile Designing" loading="lazy" decoding="async" width="900"
+            height="900">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Personalized cosmetic treatment planning to create
+              a balanced, confident and natural-looking smile.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>09</small>
+          <h3>Smile Designing</h3>
+          <p>Cosmetic planning for your perfect smile.</p>
+        </div>
+      </article>
+
+      <!-- 10 Full Mouth Rehabilitation -->
+      <article class="card reveal" tabindex="0" aria-label="Full Mouth Rehabilitation. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-fullmouth.webp" alt="Full Mouth Rehabilitation" loading="lazy" decoding="async"
+            width="1200" height="900">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Comprehensive treatment combining multiple procedures
+              to restore oral health, function and overall smile.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>10</small>
+          <h3>Full Mouth Rehabilitation</h3>
+          <p>Complete oral restoration for lasting health.</p>
+        </div>
+      </article>
+
+      <!-- 11 Complete Dentures -->
+      <article class="card reveal" tabindex="0" aria-label="Complete Dentures. Tap to learn more.">
+        <div class="card-img-wrap">
+          <img src="./Image/treatment-dentures.webp" alt="Complete Dentures" loading="lazy" decoding="async" width="900"
+            height="900">
+          <div class="card-extra" aria-hidden="true">
+            <span class="card-extra-text">Comfortable full-mouth tooth replacement designed to
+              restore everyday function and confidence.</span>
+          </div>
+        </div>
+        <div class="card-content"><small>11</small>
+          <h3>Complete Dentures</h3>
+          <p>Full-mouth replacement for restored confidence.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECTION 03: OUR WORK - REAL RESULTS (Interactive Showcase Gallery) -->
+  <section id="work" class="section work">
+    <div class="work-header reveal">
+      <div class="label">03 / OUR WORK</div>
+      <h2 class="title">Real Results.<br><span class="serif">Real Confidence.</span></h2>
+      <p class="work-subtitle">Every smile tells a story. Explore authentic clinical outcomes from real patients — achieved with precision, modern dentistry, and gentle care.</p>
+    </div>
+
+    <!-- MAIN OUTCOME SHOWCASE SLIDER -->
+    <div class="work-showcase reveal" id="workShowcase" aria-roledescription="carousel" aria-label="Real Dental Outcomes Gallery">
+      
+      <!-- Slide 1 -->
+      <article class="work-slide active" data-work-slide="0" role="group" aria-roledescription="slide" aria-label="Outcome 1 of 6: Comprehensive Smile Transformation">
+        <div class="work-slide-media">
+          <picture>
+            <source srcset="./Image/outcome-1-500w.webp 500w, ./Image/outcome-1-900w.webp 900w, ./Image/outcome-1.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-1-900w.webp" alt="Shanthi Dental Care - Comprehensive Smile Transformation" class="work-slide-img" width="900" height="900" loading="eager" decoding="async">
+          </picture>
+        </div>
+        <div class="work-slide-content">
+          <span class="work-slide-badge">CASE STUDY · 01 / 06</span>
+          <h3 class="work-slide-title">Comprehensive Smile Transformation</h3>
+          <p class="work-slide-desc">Complete cosmetic and functional smile alignment delivering natural aesthetics, strength and balanced bite harmony.</p>
+          <ul class="work-slide-points">
+            <li>✦ Full aesthetic symmetry &amp; shade matching</li>
+            <li>✦ Preserved healthy natural tooth structure</li>
+            <li>✦ Long-lasting comfort &amp; chewing function</li>
+          </ul>
+          <div class="work-slide-actions">
+            <a class="primary" href="#contact">Book Similar Consultation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 2 -->
+      <article class="work-slide" data-work-slide="1" role="group" aria-roledescription="slide" aria-label="Outcome 2 of 6: Precision Orthodontic Alignment">
+        <div class="work-slide-media">
+          <picture>
+            <source srcset="./Image/outcome-2-500w.webp 500w, ./Image/outcome-2-900w.webp 900w, ./Image/outcome-2.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-2-900w.webp" alt="Shanthi Dental Care - Precision Orthodontic Alignment" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="work-slide-content">
+          <span class="work-slide-badge">CASE STUDY · 02 / 06</span>
+          <h3 class="work-slide-title">Precision Orthodontic Alignment</h3>
+          <p class="work-slide-desc">Gentle and progressive orthodontic alignment correcting crowding and spacing for a confident, harmonious smile.</p>
+          <ul class="work-slide-points">
+            <li>✦ Smooth, gradual teeth alignment</li>
+            <li>✦ Improved dental hygiene &amp; bite health</li>
+            <li>✦ Natural facial profile enhancement</li>
+          </ul>
+          <div class="work-slide-actions">
+            <a class="primary" href="#contact">Book Similar Consultation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 3 -->
+      <article class="work-slide" data-work-slide="2" role="group" aria-roledescription="slide" aria-label="Outcome 3 of 6: Aesthetic Crown & Bridge Restoration">
+        <div class="work-slide-media">
+          <picture>
+            <source srcset="./Image/outcome-3-500w.webp 500w, ./Image/outcome-3-900w.webp 900w, ./Image/outcome-3.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-3-900w.webp" alt="Shanthi Dental Care - Aesthetic Crown & Bridge Restoration" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="work-slide-content">
+          <span class="work-slide-badge">CASE STUDY · 03 / 06</span>
+          <h3 class="work-slide-title">Aesthetic Crown &amp; Bridge Restoration</h3>
+          <p class="work-slide-desc">Biocompatible, natural-looking ceramic restorations restoring natural appearance and durable chewing strength.</p>
+          <ul class="work-slide-points">
+            <li>✦ High-strength biocompatible ceramic</li>
+            <li>✦ Seamless color blend with adjacent teeth</li>
+            <li>✦ Restored bite stability &amp; confidence</li>
+          </ul>
+          <div class="work-slide-actions">
+            <a class="primary" href="#contact">Book Similar Consultation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 4 -->
+      <article class="work-slide" data-work-slide="3" role="group" aria-roledescription="slide" aria-label="Outcome 4 of 6: Anterior Cosmetic Rehabilitation">
+        <div class="work-slide-media">
+          <picture>
+            <source srcset="./Image/outcome-4-500w.webp 500w, ./Image/outcome-4-900w.webp 900w, ./Image/outcome-4.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-4-900w.webp" alt="Shanthi Dental Care - Anterior Cosmetic Rehabilitation" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="work-slide-content">
+          <span class="work-slide-badge">CASE STUDY · 04 / 06</span>
+          <h3 class="work-slide-title">Anterior Cosmetic Rehabilitation</h3>
+          <p class="work-slide-desc">Detailed aesthetic restoration correcting discoloration and enamel wear with lifelike dental translucency.</p>
+          <ul class="work-slide-points">
+            <li>✦ Precision cosmetic bonding &amp; contouring</li>
+            <li>✦ Lifelike light reflection &amp; texture</li>
+            <li>✦ Minimum invasiveness &amp; maximum comfort</li>
+          </ul>
+          <div class="work-slide-actions">
+            <a class="primary" href="#contact">Book Similar Consultation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 5 -->
+      <article class="work-slide" data-work-slide="4" role="group" aria-roledescription="slide" aria-label="Outcome 5 of 6: Endodontic & Structural Tooth Rescue">
+        <div class="work-slide-media">
+          <picture>
+            <source srcset="./Image/outcome-5-500w.webp 500w, ./Image/outcome-5-900w.webp 900w, ./Image/outcome-5.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-5-900w.webp" alt="Shanthi Dental Care - Endodontic & Structural Tooth Rescue" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="work-slide-content">
+          <span class="work-slide-badge">CASE STUDY · 05 / 06</span>
+          <h3 class="work-slide-title">Endodontic &amp; Structural Tooth Rescue</h3>
+          <p class="work-slide-desc">Micro-precision root canal treatment and protective crown restoration preserving the natural tooth painlessly.</p>
+          <ul class="work-slide-points">
+            <li>✦ 100% painless infection removal</li>
+            <li>✦ Long-term natural tooth preservation</li>
+            <li>✦ Reinforced with custom protective crown</li>
+          </ul>
+          <div class="work-slide-actions">
+            <a class="primary" href="#contact">Book Similar Consultation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Slide 6 -->
+      <article class="work-slide" data-work-slide="5" role="group" aria-roledescription="slide" aria-label="Outcome 6 of 6: Full Arch Restorative & Smile Design">
+        <div class="work-slide-media">
+          <picture>
+            <source srcset="./Image/outcome-6-500w.webp 500w, ./Image/outcome-6-900w.webp 900w, ./Image/outcome-6.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-6-900w.webp" alt="Shanthi Dental Care - Full Arch Restorative & Smile Design" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="work-slide-content">
+          <span class="work-slide-badge">CASE STUDY · 06 / 06</span>
+          <h3 class="work-slide-title">Full Arch Restorative &amp; Smile Design</h3>
+          <p class="work-slide-desc">Comprehensive multi-discipline dental care restoring full mouth function, oral health, and radiant confidence.</p>
+          <ul class="work-slide-points">
+            <li>✦ Personalized comprehensive smile design</li>
+            <li>✦ Restored chewing power &amp; clear speech</li>
+            <li>✦ Natural aesthetic balance &amp; comfort</li>
+          </ul>
+          <div class="work-slide-actions">
+            <a class="primary" href="#contact">Book Similar Consultation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Prev / Next Navigation Arrows -->
+      <button class="work-nav-btn prev" id="workPrev" aria-label="Previous outcome" title="Previous case (Left Arrow)">‹</button>
+      <button class="work-nav-btn next" id="workNext" aria-label="Next outcome" title="Next case (Right Arrow)">›</button>
+
+    </div>
+
+    <!-- GALLERY CONTROLS & THUMBNAIL STRIP (All 6 Outcomes in One Gallery View) -->
+    <div class="work-gallery-footer reveal">
+      <div class="work-thumb-strip" id="workThumbStrip" role="tablist" aria-label="Outcome gallery thumbnails">
+        <button class="work-thumb-card active" data-work-index="0" role="tab" aria-selected="true" aria-label="Case 1: Comprehensive Smile Transformation">
+          <img src="./Image/outcome-1-500w.webp" alt="Case 1 thumbnail" width="80" height="80">
+          <div class="work-thumb-info">
+            <small>CASE 01</small>
+            <span>Smile Transformation</span>
+          </div>
+        </button>
+        <button class="work-thumb-card" data-work-index="1" role="tab" aria-selected="false" aria-label="Case 2: Orthodontic Alignment">
+          <img src="./Image/outcome-2-500w.webp" alt="Case 2 thumbnail" width="80" height="80">
+          <div class="work-thumb-info">
+            <small>CASE 02</small>
+            <span>Orthodontic Alignment</span>
+          </div>
+        </button>
+        <button class="work-thumb-card" data-work-index="2" role="tab" aria-selected="false" aria-label="Case 3: Crown & Bridge Restoration">
+          <img src="./Image/outcome-3-500w.webp" alt="Case 3 thumbnail" width="80" height="80">
+          <div class="work-thumb-info">
+            <small>CASE 03</small>
+            <span>Crown &amp; Bridge</span>
+          </div>
+        </button>
+        <button class="work-thumb-card" data-work-index="3" role="tab" aria-selected="false" aria-label="Case 4: Cosmetic Rehabilitation">
+          <img src="./Image/outcome-4-500w.webp" alt="Case 4 thumbnail" width="80" height="80">
+          <div class="work-thumb-info">
+            <small>CASE 04</small>
+            <span>Cosmetic Care</span>
+          </div>
+        </button>
+        <button class="work-thumb-card" data-work-index="4" role="tab" aria-selected="false" aria-label="Case 5: Tooth Rescue">
+          <img src="./Image/outcome-5-500w.webp" alt="Case 5 thumbnail" width="80" height="80">
+          <div class="work-thumb-info">
+            <small>CASE 05</small>
+            <span>Tooth Rescue</span>
+          </div>
+        </button>
+        <button class="work-thumb-card" data-work-index="5" role="tab" aria-selected="false" aria-label="Case 6: Full Arch Design">
+          <img src="./Image/outcome-6-500w.webp" alt="Case 6 thumbnail" width="80" height="80">
+          <div class="work-thumb-info">
+            <small>CASE 06</small>
+            <span>Full Arch Design</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Pagination Progress Dots & Timer Tag -->
+      <div class="work-progress-bar">
+        <div class="slider-pagination-dots" id="workDots" role="tablist" aria-label="Outcome slide dots">
+          <button class="slider-dot active" data-work-index="0" role="tab" aria-selected="true" aria-label="Slide 1"><span class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="1" role="tab" aria-selected="false" aria-label="Slide 2"><span class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="2" role="tab" aria-selected="false" aria-label="Slide 3"><span class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="3" role="tab" aria-selected="false" aria-label="Slide 4"><span class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="4" role="tab" aria-selected="false" aria-label="Slide 5"><span class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="5" role="tab" aria-selected="false" aria-label="Slide 6"><span class="dot-progress"></span></button>
+        </div>
+        <div class="slider-timer-indicator">
+          <span class="timer-dot"></span>
+          <span class="timer-tag">Auto-tour (8s)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05: CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="label">05 / CONTACT</div>
+        <h2>Ready for a<br><span class="serif">healthier smile?</span></h2>
+        <p>Let's make your next dental visit comfortable, clear and personalized.</p>
+        <a class="primary" href="tel:+919962237380">Call the Clinic ↗</a>
+      </div>
+
+      <div class="details reveal">
+        <div class="detail"><small>LOCATION</small>
+          <p>No.4/240, 1" Floor,
+            Annai Anjugam Nagar Busstop, Nandambakkam, Kundrathur, Ch - 69.
+            Landmark: Above Medplus Medical.</p><a href="https://share.google/Hw6gDKDmZr8VUI6CV" target="_blank"
+            rel="noopener noreferrer">Get Directions ↗</a>
+        </div>
+        <div class="detail"><small>PHONE</small><a href="tel:+919962237380">+91 99622 37380</a></div>
+        <div class="detail"><small>EMAIL</small><a href="mailto:[EMAIL_ADDRESS]">[EMAIL_ADDRESS]</a></div>
+        <div class="detail"><small>OPENING HOURS</small>
+          <p>Mon to Sat - 9.30 a.m. to 9.00 p.m</p>
+          <p>Sunday - 10.30 a.m. to 5.30 p.m</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <a class="logo" href="#" aria-label="Shanthi Dental Care" style="margin-bottom:14px;">
+          <img src="./Image/Logo.png" alt="Shanthi Dental Care" style="height:48px;border-radius:10px;">
+        </a>
+        <p style="margin: 8px 0 4px; font-weight: 700; color: #fff;">Dr. G. JAGANRAJ, B.D.S</p>
+        <p style="margin: 0 0 8px; color: var(--rose-soft); font-size: 11px;">General Dentist | 8 Years of Clinical
+          Experience</p>
+        <p>Ethical, patient-centred dental care with clinical precision.</p>
+      </div>
+    </div>
+    <div class="copy">© 2026 Shanthi Dental Care · All Rights Reserved.</div>
+  </footer>
+
+  <!-- FLOATING DENTAL ASSISTANT BUTTON & INTERACTIVE CONCIERGE -->
+  <button class="chat" id="chat" aria-label="Open Dental Assistant" title="Open Dental Assistant & Hours">
+    <span class="chat-icon">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 4.5C5 4.5 3.5 6 3.5 8.5C3.5 12 5 15.5 6.5 19.5C7.2 21.2 8.8 21.2 9.5 19C10.2 16.5 10.8 14.5 12 14.5C13.2 14.5 13.8 16.5 14.5 19C15.2 21.2 16.8 21.2 17.5 19.5C19 15.5 20.5 12 20.5 8.5C20.5 6 19 4.5 17 4.5C15.2 4.5 13.8 5.8 12 5.8C10.2 5.8 8.8 4.5 7 4.5Z" fill="rgba(255,255,255,0.18)" />
+        <path d="M19 1.5L19.7 3.3L21.5 4L19.7 4.7L19 6.5L18.3 4.7L16.5 4L18.3 3.3Z" fill="currentColor" />
+        <path d="M21.5 6.5L21.9 7.4L22.8 7.8L21.9 8.2L21.5 9.1L21.1 8.2L20.2 7.8L21.1 7.4Z" fill="currentColor" />
+        <path d="M3.5 14.5L4.2 16.3L6 17L4.2 17.7L3.5 19.5L2.8 17.7L1 17L2.8 16.3Z" fill="currentColor" />
+      </svg>
+    </span>
+    <span class="chat-pulse"></span>
+  </button>
+
+  <!-- DENTAL ASSISTANT CONCIERGE DRAWER -->
+  <div class="chatbox" id="chatbox" role="dialog" aria-label="Shanthi Dental Care Assistant">
+    <!-- Header -->
+    <div class="chatbox-header">
+      <div class="chatbox-brand">
+        <div class="chatbox-avatar">👨‍⚕️</div>
+        <div>
+          <h4 class="chatbox-title">Shanthi Dental Care</h4>
+          <span class="chatbox-subtitle">Dr. G. Jaganraj, B.D.S · Lead Dentist</span>
+        </div>
+      </div>
+      <button class="chatbox-close" id="chatboxClose" aria-label="Close Assistant">✕</button>
+    </div>
+
+    <!-- Live Status Pill -->
+    <div class="chatbox-status-bar" id="clinicLiveStatus">
+      <span class="status-indicator-dot"></span>
+      <span class="status-indicator-text" id="statusText">Checking clinic hours...</span>
+    </div>
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="chatbox-tabs" role="tablist">
+      <button class="chatbox-tab active" data-chat-tab="timings" role="tab" aria-selected="true">🕒 Available Hours</button>
+      <button class="chatbox-tab" data-chat-tab="treatments" role="tab" aria-selected="false">🦷 Treatment Guide</button>
+      <button class="chatbox-tab" data-chat-tab="location" role="tab" aria-selected="false">📍 Contact &amp; Map</button>
+    </div>
+
+    <!-- Tab 1: Available Timings & Hours -->
+    <div class="chatbox-panel active" id="chatPanel-timings" role="tabpanel">
+      <div class="hours-card">
+        <div class="hours-row highlight">
+          <div class="hours-day">
+            <strong>Monday – Saturday</strong>
+            <small>Regular Operatory Hours</small>
+          </div>
+          <div class="hours-time">9:30 AM – 9:00 PM</div>
+        </div>
+        <div class="hours-row">
+          <div class="hours-day">
+            <strong>Sunday</strong>
+            <small>Special Weekend Clinic</small>
+          </div>
+          <div class="hours-time">10:30 AM – 5:30 PM</div>
+        </div>
+      </div>
+
+      <div class="chatbox-tip">
+        <span>💡</span>
+        <p><strong>Appointment Tip:</strong> Walk-ins are welcome! For specialized treatments like Root Canals or Implants, pre-booking guarantees zero waiting time.</p>
+      </div>
+
+      <div class="chatbox-quick-actions">
+        <a class="chatbox-btn primary" href="tel:+919962237380">📞 Call Now: +91 99622 37380</a>
+        <a class="chatbox-btn secondary" href="#contact" onclick="document.getElementById('chatbox').classList.remove('open')">📅 Book Consultation</a>
+      </div>
+    </div>
+
+    <!-- Tab 2: Treatment Directory (What each treatment contains) -->
+    <div class="chatbox-panel" id="chatPanel-treatments" role="tabpanel">
+      <p class="chatbox-section-intro">Explore our 11 clinical specialties and what each procedure involves:</p>
+
+      <div class="chat-treatment-list">
+
+        <!-- 1. Consulting & X-ray -->
+        <details class="chat-treatment-item" open>
+          <summary>
+            <span class="item-num">01</span>
+            <span class="item-name">Consulting &amp; Digital X-ray</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Complete intraoral clinical examination, high-resolution digital X-rays to diagnose underlying cavities, bone health, and personalized care planning.</p>
+            <div class="item-tags"><span>Diagnosis</span><span>Digital X-Ray</span><span>Zero Pain</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 2. Dental Implants -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">02</span>
+            <span class="item-name">Dental Implants</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Permanent titanium fixture anchored into the jawbone with a lifelike ceramic crown. Restores 100% natural chewing strength and stops bone loss.</p>
+            <div class="item-tags"><span>Permanent</span><span>Titanium</span><span>Natural Feel</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 3. Teeth Cleaning -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">03</span>
+            <span class="item-name">Teeth Cleaning (Scaling &amp; Polishing)</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Gentle ultrasonic scaling removes hardened calculus, plaque, and nicotine/tea stains, followed by prophy-paste polishing for healthy gums and fresh breath.</p>
+            <div class="item-tags"><span>Ultrasonic</span><span>Gum Health</span><span>Stain Removal</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 4. Root Canal Treatments -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">04</span>
+            <span class="item-name">Root Canal Treatments</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Painless removal of infected pulp from the inner tooth roots using rotary endodontics, thorough bio-cleaning, sealing, and reinforcement with a protective crown.</p>
+            <div class="item-tags"><span>Painless</span><span>Save Natural Tooth</span><span>Rotary Endodontics</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 5. Braces & Aligners -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">05</span>
+            <span class="item-name">Braces &amp; Clear Aligners</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Modern ceramic/metal braces or invisible clear aligners that gently guide crooked, spaced, or crowded teeth into symmetrical alignment.</p>
+            <div class="item-tags"><span>Invisible Aligners</span><span>Straight Smile</span><span>Bite Fix</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 6. Crowns & Bridges -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">06</span>
+            <span class="item-name">Crowns &amp; Bridges</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Custom-milled Zirconia/Ceramic crowns covering cracked or heavily filled teeth, and fixed bridges replacing one or more missing teeth seamlessly.</p>
+            <div class="item-tags"><span>Zirconia</span><span>High Durability</span><span>Bite Restoration</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 7. Kids Dentistry -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">07</span>
+            <span class="item-name">Kids Dentistry (Pediatric Care)</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Child-friendly checkups, gentle cavity management, fluoride treatments, and pit/fissure sealants in a welcoming, stress-free environment.</p>
+            <div class="item-tags"><span>Child Friendly</span><span>Preventive Care</span><span>Zero Fear</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 8. Tooth Coloured Fillings -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">08</span>
+            <span class="item-name">Tooth Coloured Composite Fillings</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Aesthetic composite resin matched to your exact tooth shade, curing instantly under UV light to repair decay and minor enamel chipping invisibly.</p>
+            <div class="item-tags"><span>Invisible</span><span>Mercury Free</span><span>Same Day</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 9. Smile Designing -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">09</span>
+            <span class="item-name">Smile Designing &amp; Veneers</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Comprehensive cosmetic facial and dental aesthetic analysis, porcelain veneers, contouring, and shade enhancement for your dream smile.</p>
+            <div class="item-tags"><span>Cosmetic Makeover</span><span>Veneers</span><span>Symmetry</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 10. Full Mouth Rehabilitation -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">10</span>
+            <span class="item-name">Full Mouth Rehabilitation</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Multi-disciplinary reconstructive plan rebuilding severely worn, missing, or broken teeth to restore youthfulness, chewing power, and oral health.</p>
+            <div class="item-tags"><span>Complete Rebuild</span><span>Joint &amp; Bite Alignment</span><span>Full Health</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+        <!-- 11. Complete Dentures -->
+        <details class="chat-treatment-item">
+          <summary>
+            <span class="item-num">11</span>
+            <span class="item-name">Complete Dentures</span>
+            <span class="item-arrow">▾</span>
+          </summary>
+          <div class="item-body">
+            <p><strong>What it involves:</strong> Ergonomic, comfortable custom acrylic or cast-partial dentures crafted to replace full arch teeth with snug fit and natural aesthetics.</p>
+            <div class="item-tags"><span>Comfort Fit</span><span>Full Arch</span><span>Confident Chewing</span></div>
+            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+          </div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- Tab 3: Location & Contact -->
+    <div class="chatbox-panel" id="chatPanel-location" role="tabpanel">
+      <div class="chat-location-card">
+        <div class="loc-badge">📍 CLINIC ADDRESS</div>
+        <p><strong>Shanthi Dental Care</strong><br>
+        No.4/240, 1st Floor, Annai Anjugam Nagar Busstop,<br>
+        Nandambakkam, Kundrathur, Chennai - 600069.<br>
+        <span class="landmark-tag">🏷️ Landmark: Above Medplus Medical</span></p>
+
+        <a class="chatbox-btn outline" href="https://share.google/Hw6gDKDmZr8VUI6CV" target="_blank" rel="noopener noreferrer">
+          🗺️ Open Google Maps Directions ↗
+        </a>
+      </div>
+
+      <div class="chatbox-quick-actions">
+        <a class="chatbox-btn primary" href="tel:+919962237380">📞 Call Dr. G. Jaganraj</a>
+        <a class="chatbox-btn secondary" href="mailto:info@shanthidentalcare.com">✉ Email Clinic</a>
+      </div>
+    </div>
+
+  </div>
+
+
+    <script>
+    /* ==========================================
+       SCROLL REVEAL & HERO ANIMATION
+       ========================================== */
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!reduce) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.transition = 'opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1),filter 1s';
+            e.target.style.opacity = 1;
+            e.target.style.transform = 'translateY(0)';
+            e.target.style.filter = 'blur(0)';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: .12 });
+
+      document.querySelectorAll('.reveal').forEach(e => io.observe(e));
+
+      document.querySelectorAll('.hero-text>*').forEach((e, i) => {
+        setTimeout(() => {
+          e.style.transition = 'opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)';
+          e.style.opacity = 1;
+          e.style.transform = 'translateY(0)';
+        }, 220 + i * 130);
+      });
+
+      addEventListener('scroll', () => {
+        const y = scrollY;
+        const heroPhoto = document.querySelector('.hero-photo');
+        if (heroPhoto) heroPhoto.style.transform = `rotate(1.5deg) translateY(${Math.min(y * .04, 30)}px)`;
+      }, { passive: true });
+    } else {
+      document.querySelectorAll('.reveal,.hero-text>*').forEach(e => {
+        e.style.opacity = 1; e.style.transform = 'none'; e.style.filter = 'none';
+      });
+    }
+
+    /* ==========================================
+       CHAT DRAWER TOGGLE
+       ========================================== */
+    document.getElementById('chat').onclick = () => {
+      document.getElementById('chatbox').classList.toggle('open');
+    };
+
+    /* ==========================================
+       CLINIC PHOTO DATA
+       ========================================== */
+    const clinicPhotos = [
+      {
+        src: './Image/clinic-01.webp',
+        thumb: './Image/clinic-01-600w.webp',
+        title: 'Modern Dental Operatory Suite',
+        caption: 'Ergonomic dental chair and treatment suite designed with advanced clinical lighting and patient comfort protocols.',
+        alt: 'Shanthi Dental Care - Modern Operatory Suite'
+      },
+      {
+        src: './Image/clinic-02.webp',
+        thumb: './Image/clinic-02-600w.webp',
+        title: 'Reception Lounge & Consultation Entrance',
+        caption: 'Warm, welcoming patient lounge, reception desk, and consultation chamber entrance.',
+        alt: 'Shanthi Dental Care - Clinic Reception Lounge & Entrance'
+      },
+      {
+        src: './Image/clinic-03.webp',
+        thumb: './Image/clinic-03-600w.webp',
+        title: 'Sterilization & Precision Equipment',
+        caption: 'Hospital-grade autoclaves and ultrasonic sterilization ensuring 100% infection control for all procedures.',
+        alt: 'Shanthi Dental Care - Clinical Equipment Setup'
+      },
+      {
+        src: './Image/clinic-04.webp',
+        thumb: './Image/clinic-04-600w.webp',
+        title: 'Diagnostic & Treatment Area',
+        caption: 'Advanced dental chair, modern clinical instrumentation, and hygienic care delivery.',
+        alt: 'Shanthi Dental Care - Consultation & Care Area'
+      },
+      {
+        src: './Image/clinic-05.webp',
+        thumb: './Image/clinic-05-600w.webp',
+        title: 'Clinic Interior',
+        caption: 'A clean, well-lit clinical environment designed for patient comfort and efficient care delivery.',
+        alt: 'Shanthi Dental Care - Clinic Interior'
+      },
+      {
+        src: './Image/clinic-06.webp',
+        thumb: './Image/clinic-06-600w.webp',
+        title: 'Clinic View',
+        caption: 'Every corner of Shanthi Dental Care reflects our commitment to hygiene, precision and patient-first care.',
+        alt: 'Shanthi Dental Care - Clinic View'
+      },
+      {
+        src: './Image/clinic-07.webp',
+        thumb: './Image/clinic-07-600w.webp',
+        title: 'Dental Suite',
+        caption: 'State-of-the-art dental suite offering modern treatment protocols in a comfortable, professional setting.',
+        alt: 'Shanthi Dental Care - Dental Suite'
+      }
+    ];
+
+    const treatmentPhotos = [
+      {
+        src: './Image/treatment-general.webp',
+        thumb: './Image/treatment-general.webp',
+        title: 'General & Preventive Dentistry',
+        caption: 'Comprehensive dental examinations, diagnostic assessments, and proactive preventive care.',
+        alt: 'General Dentistry'
+      },
+      {
+        src: './Image/treatment-cleaning.webp',
+        thumb: './Image/treatment-cleaning.webp',
+        title: 'Professional Teeth Cleaning & Scaling',
+        caption: 'Gentle ultrasonic plaque removal, stain polishing, and gum health maintenance.',
+        alt: 'Teeth Cleaning'
+      },
+      {
+        src: './Image/treatment-implants.webp',
+        thumb: './Image/treatment-implants.webp',
+        title: 'Dental Implants & Prosthetics',
+        caption: 'Biocompatible titanium implants for durable, natural-looking tooth replacement.',
+        alt: 'Dental Implants'
+      },
+      {
+        src: './Image/treatment-aligners.webp',
+        thumb: './Image/treatment-aligners.webp',
+        title: 'Braces & Clear Aligners',
+        caption: 'Advanced orthodontics and invisible aligners for precision smile alignment.',
+        alt: 'Braces & Aligners'
+      },
+      {
+        src: './Image/treatment-rootcanal.webp',
+        thumb: './Image/treatment-rootcanal.webp',
+        title: 'Root Canal Therapy (Endodontics)',
+        caption: 'Micro-precision rotary endodontics preserving natural tooth structure painlessly.',
+        alt: 'Root Canal'
+      }
+    ];
+
+    const SLIDE_DURATION = 10000; // EXACTLY 10 seconds per slide
+
+    /* ==========================================
+       INTERACTIVE DENTAL CONCIERGE & LIVE HOURS
+       ========================================== */
+    const chatBtn = document.getElementById('chat');
+    const chatbox = document.getElementById('chatbox');
+    const chatboxClose = document.getElementById('chatboxClose');
+    const chatTabs = document.querySelectorAll('.chatbox-tab');
+    const chatPanels = document.querySelectorAll('.chatbox-panel');
+
+    if (chatBtn && chatbox) {
+      chatBtn.onclick = (e) => {
+        e.stopPropagation();
+        chatbox.classList.toggle('open');
+      };
+    }
+
+    if (chatboxClose && chatbox) {
+      chatboxClose.onclick = (e) => {
+        e.stopPropagation();
+        chatbox.classList.remove('open');
+      };
+    }
+
+    // Dismiss chatbox when clicking outside
+    document.addEventListener('click', (e) => {
+      if (chatbox && chatbox.classList.contains('open')) {
+        if (!chatbox.contains(e.target) && e.target !== chatBtn && !chatBtn.contains(e.target)) {
+          chatbox.classList.remove('open');
+        }
+      }
+    });
+
+    // Tab Switching
+    chatTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        chatTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        chatPanels.forEach(p => p.classList.remove('active'));
+
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        const targetId = `chatPanel-${tab.getAttribute('data-chat-tab')}`;
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) targetPanel.classList.add('active');
+      });
+    });
+
+    // Live Clinic Open/Closed Hours Detector
+    function updateClinicLiveStatus() {
+      const statusText = document.getElementById('statusText');
+      const dot = document.querySelector('.status-indicator-dot');
+      if (!statusText || !dot) return;
+
+      const now = new Date();
+      const day = now.getDay(); // 0 = Sun, 1 = Mon ... 6 = Sat
+      const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+      let isOpen = false;
+      let closeTimeStr = '';
+
+      if (day >= 1 && day <= 6) {
+        // Mon - Sat: 9:30 AM (570m) to 9:00 PM (1260m)
+        if (currentMinutes >= 570 && currentMinutes < 1260) {
+          isOpen = true;
+          closeTimeStr = '9:00 PM';
+        }
+      } else if (day === 0) {
+        // Sun: 10:30 AM (630m) to 5:30 PM (1050m)
+        if (currentMinutes >= 630 && currentMinutes < 1050) {
+          isOpen = true;
+          closeTimeStr = '5:30 PM';
+        }
+      }
+
+      if (isOpen) {
+        dot.classList.remove('closed');
+        statusText.innerHTML = `🟢 <strong>Open Today</strong> · Closes at ${closeTimeStr}`;
+      } else {
+        dot.classList.add('closed');
+        const nextOpen = day === 0 ? 'Monday at 9:30 AM' : 'Today at 9:30 AM';
+        statusText.innerHTML = `🕒 <strong>Currently Closed</strong> · Opens ${nextOpen}`;
+      }
+    }
+
+    updateClinicLiveStatus();
+
+
+    /* ==========================================
+       ABOUT SECTION AUTOMATIC 10-SECOND SLIDER
+       Sequence: clinic-01 -> clinic-02 -> ... -> clinic-07 -> repeat
+       ========================================== */
+    const aboutSlides = document.querySelectorAll('.about-slide');
+    const aboutDots = document.querySelectorAll('.about-dot');
+    const aboutPrevBtn = document.getElementById('aboutPrev');
+    const aboutNextBtn = document.getElementById('aboutNext');
+    let currentAboutIndex = 0;
+    let aboutAutoTimer = null;
+
+    function activateAboutSlide(index) {
+      if (index < 0) index = aboutSlides.length - 1;
+      if (index >= aboutSlides.length) index = 0;
+      currentAboutIndex = index;
+
+      aboutSlides.forEach((slide, i) => {
+        const isActive = i === currentAboutIndex;
+        slide.classList.toggle('active', isActive);
+        slide.setAttribute('aria-hidden', !isActive);
+      });
+
+      aboutDots.forEach((dot, i) => {
+        const isActive = i === currentAboutIndex;
+        dot.classList.toggle('active', isActive);
+        dot.setAttribute('aria-selected', isActive);
+
+        const progress = dot.querySelector('.about-dot-progress');
+        if (progress) {
+          progress.style.transition = 'none';
+          progress.style.width = '0%';
+          if (isActive && !reduce) {
+            void progress.offsetWidth; // Force reflow
+            progress.style.transition = `width ${SLIDE_DURATION}ms linear`;
+            progress.style.width = '100%';
+          }
+        }
+      });
+
+      // Preload next image
+      const nextIdx = (currentAboutIndex + 1) % aboutSlides.length;
+      const nextSlide = aboutSlides[nextIdx];
+      const nextImg = nextSlide ? nextSlide.querySelector('img') : null;
+      if (nextImg && nextImg.dataset.src) {
+        const preload = new Image();
+        preload.src = nextImg.dataset.src;
+      }
+    }
+
+    function startAboutAutoSlide() {
+      if (aboutAutoTimer) clearInterval(aboutAutoTimer);
+      activateAboutSlide(currentAboutIndex);
+      aboutAutoTimer = setInterval(() => {
+        activateAboutSlide((currentAboutIndex + 1) % aboutSlides.length);
+      }, SLIDE_DURATION);
+    }
+
+    // Dot clicks
+    aboutDots.forEach(dot => {
+      dot.onclick = (e) => {
+        e.stopPropagation();
+        const targetIndex = parseInt(dot.getAttribute('data-about-index'), 10) || 0;
+        if (aboutAutoTimer) clearInterval(aboutAutoTimer);
+        activateAboutSlide(targetIndex);
+        startAboutAutoSlide();
+      };
+    });
+
+    // Prev / Next arrow buttons
+    if (aboutPrevBtn) {
+      aboutPrevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (aboutAutoTimer) clearInterval(aboutAutoTimer);
+        activateAboutSlide(currentAboutIndex - 1);
+        startAboutAutoSlide();
+      });
+    }
+    if (aboutNextBtn) {
+      aboutNextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (aboutAutoTimer) clearInterval(aboutAutoTimer);
+        activateAboutSlide(currentAboutIndex + 1);
+        startAboutAutoSlide();
+      });
+    }
+
+    // Swipe support for mobile
+    (function () {
+      const wrap = document.getElementById('aboutSlider');
+      if (!wrap) return;
+      let tx = 0;
+      wrap.addEventListener('touchstart', e => { tx = e.changedTouches[0].screenX; }, { passive: true });
+      wrap.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].screenX - tx;
+        if (Math.abs(dx) > 40) {
+          if (aboutAutoTimer) clearInterval(aboutAutoTimer);
+          activateAboutSlide(dx > 0 ? currentAboutIndex - 1 : currentAboutIndex + 1);
+          startAboutAutoSlide();
+        }
+      }, { passive: true });
+    }());
+
+    startAboutAutoSlide();
+
+    /* ==========================================
+       SECTION 03: REAL RESULTS GALLERY SLIDER
+       ========================================== */
+    const workSlides = document.querySelectorAll('#workShowcase .work-slide');
+    const workThumbs = document.querySelectorAll('#workThumbStrip .work-thumb-card');
+    const workDots = document.querySelectorAll('#workDots .slider-dot');
+    const workPrevBtn = document.getElementById('workPrev');
+    const workNextBtn = document.getElementById('workNext');
+    let currentWorkIndex = 0;
+    let workAutoTimer = null;
+    const WORK_SLIDE_DURATION = 8000;
+
+    function activateWorkSlide(index) {
+      if (!workSlides.length) return;
+      if (index < 0) index = workSlides.length - 1;
+      if (index >= workSlides.length) index = 0;
+      currentWorkIndex = index;
+
+      workSlides.forEach((slide, i) => {
+        const isActive = i === currentWorkIndex;
+        slide.classList.toggle('active', isActive);
+        slide.setAttribute('aria-hidden', !isActive);
+      });
+
+      workThumbs.forEach((thumb, i) => {
+        const isActive = i === currentWorkIndex;
+        thumb.classList.toggle('active', isActive);
+        thumb.setAttribute('aria-selected', isActive);
+      });
+
+      workDots.forEach((dot, i) => {
+        const isActive = i === currentWorkIndex;
+        dot.classList.toggle('active', isActive);
+        dot.setAttribute('aria-selected', isActive);
+
+        const progress = dot.querySelector('.dot-progress');
+        if (progress) {
+          progress.style.transition = 'none';
+          progress.style.width = '0%';
+          if (isActive && !reduce) {
+            void progress.offsetWidth;
+            progress.style.transition = `width ${WORK_SLIDE_DURATION}ms linear`;
+            progress.style.width = '100%';
+          }
+        }
+      });
+    }
+
+    function startWorkAutoSlide() {
+      if (workAutoTimer) clearInterval(workAutoTimer);
+      activateWorkSlide(currentWorkIndex);
+      workAutoTimer = setInterval(() => {
+        activateWorkSlide((currentWorkIndex + 1) % workSlides.length);
+      }, WORK_SLIDE_DURATION);
+    }
+
+    // Thumbnail Clicks
+    if (workThumbs.length) {
+      workThumbs.forEach(thumb => {
+        thumb.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const targetIndex = parseInt(thumb.getAttribute('data-work-index'), 10) || 0;
+          if (workAutoTimer) clearInterval(workAutoTimer);
+          activateWorkSlide(targetIndex);
+          startWorkAutoSlide();
+        });
+      });
+    }
+
+    // Dot Clicks
+    if (workDots.length) {
+      workDots.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const targetIndex = parseInt(dot.getAttribute('data-work-index'), 10) || 0;
+          if (workAutoTimer) clearInterval(workAutoTimer);
+          activateWorkSlide(targetIndex);
+          startWorkAutoSlide();
+        });
+      });
+    }
+
+    // Nav Arrows
+    if (workPrevBtn) {
+      workPrevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (workAutoTimer) clearInterval(workAutoTimer);
+        activateWorkSlide(currentWorkIndex - 1);
+        startWorkAutoSlide();
+      });
+    }
+
+    if (workNextBtn) {
+      workNextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (workAutoTimer) clearInterval(workAutoTimer);
+        activateWorkSlide(currentWorkIndex + 1);
+        startWorkAutoSlide();
+      });
+    }
+
+    // Touch Swipe for Showcase
+    (function () {
+      const showcase = document.getElementById('workShowcase');
+      if (!showcase) return;
+      let sTouchStart = 0;
+      showcase.addEventListener('touchstart', (e) => {
+        sTouchStart = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      showcase.addEventListener('touchend', (e) => {
+        const diff = e.changedTouches[0].screenX - sTouchStart;
+        if (Math.abs(diff) > 40) {
+          if (workAutoTimer) clearInterval(workAutoTimer);
+          if (diff > 0) {
+            activateWorkSlide(currentWorkIndex - 1);
+          } else {
+            activateWorkSlide(currentWorkIndex + 1);
+          }
+          startWorkAutoSlide();
+        }
+      }, { passive: true });
+    }());
+
+    startWorkAutoSlide();
+
+
+    /* ── Treatment card mobile tap-to-reveal ── */
+    (function () {
+      var cards = document.querySelectorAll('.card');
+      var activeCard = null;
+
+      function isTouchPrimary() {
+        return window.matchMedia('(hover: none)').matches;
+      }
+
+      function activateCard(card) {
+        if (activeCard && activeCard !== card) {
+          activeCard.classList.remove('card--active');
+        }
+        card.classList.toggle('card--active');
+        activeCard = card.classList.contains('card--active') ? card : null;
+      }
+
+      cards.forEach(function (card) {
+        // Mobile / touch: tap toggles the hover reveal
+        card.addEventListener('click', function (e) {
+          if (isTouchPrimary()) {
+            e.stopPropagation();
+            activateCard(card);
+          }
+        });
+
+        // Keyboard: Enter/Space triggers reveal (focusin/focusout handled by :focus-within)
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            activateCard(card);
+          }
+          if (e.key === 'Escape') {
+            card.classList.remove('card--active');
+            activeCard = null;
+          }
+        });
+      });
+
+      // Dismiss active card when clicking outside
+      document.addEventListener('click', function (e) {
+        if (activeCard && !activeCard.contains(e.target)) {
+          activeCard.classList.remove('card--active');
+          activeCard = null;
+        }
+      });
+    }());
+  </script>
+</body>
+
+</html>
