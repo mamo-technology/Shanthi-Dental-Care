@@ -326,7 +326,7 @@
       object-fit: cover;
       object-position: center center;
       transform: scale(1.05);
-      transition: transform 3s linear;
+      transition: transform 10s linear;
       display: block;
     }
 
@@ -382,7 +382,7 @@
 
     .about-dot.active .about-dot-progress {
       width: 100%;
-      transition: width 3s linear;
+      transition: width 10s linear;
     }
 
     .about p {
@@ -808,8 +808,13 @@
       box-shadow: 0 8px 24px rgba(79, 121, 66, 0.45);
     }
 
-    .work-nav-btn.prev { left: 14px; }
-    .work-nav-btn.next { right: 14px; }
+    .work-nav-btn.prev {
+      left: 14px;
+    }
+
+    .work-nav-btn.next {
+      right: 14px;
+    }
 
     /* ── Gallery Footer & Thumbnail Strip ── */
     .work-gallery-footer {
@@ -919,16 +924,20 @@
     }
 
     .detail small {
-      font-size: 9px;
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
       letter-spacing: .17em;
       color: var(--green);
+      margin-bottom: 6px;
     }
 
     .detail p,
     .detail a {
       font-size: 14px;
       color: var(--ink);
-      margin: 8px 0;
+      margin: 4px 0;
+      display: inline-block;
     }
 
     footer {
@@ -995,9 +1004,20 @@
     }
 
     @keyframes chat-pulse-anim {
-      0% { transform: scale(1); opacity: 0.8; }
-      70% { transform: scale(1.35); opacity: 0; }
-      100% { transform: scale(1.4); opacity: 0; }
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+
+      70% {
+        transform: scale(1.35);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1.4);
+        opacity: 0;
+      }
     }
 
     /* ── Concierge Drawer Box ── */
@@ -1221,7 +1241,9 @@
       margin-bottom: 14px;
     }
 
-    .chatbox-tip p { margin: 0; }
+    .chatbox-tip p {
+      margin: 0;
+    }
 
     /* Quick Actions */
     .chatbox-quick-actions {
@@ -1343,7 +1365,9 @@
       padding-top: 8px;
     }
 
-    .item-body p { margin: 0 0 8px; }
+    .item-body p {
+      margin: 0 0 8px;
+    }
 
     .item-tags {
       display: flex;
@@ -1411,10 +1435,12 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
       }
+
       .work-slide {
         gap: 28px;
         padding: 28px 32px;
       }
+
       .work-thumb-strip {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -1629,8 +1655,13 @@
         font-size: 18px;
       }
 
-      .work-nav-btn.prev { left: 8px; }
-      .work-nav-btn.next { right: 8px; }
+      .work-nav-btn.prev {
+        left: 8px;
+      }
+
+      .work-nav-btn.next {
+        right: 8px;
+      }
 
       .work-slide-content {
         padding-right: 0;
@@ -1937,24 +1968,6 @@
               stroke-linejoin="round" />
           </svg>
         </button>
-
-        <!-- Minimal Pagination Dots -->
-        <div class="about-slider-dots" id="aboutDots" role="tablist" aria-label="About clinic slider pagination">
-          <button class="about-dot active" data-about-index="0" role="tab" aria-selected="true"
-            aria-label="Slide 1"><span class="about-dot-progress"></span></button>
-          <button class="about-dot" data-about-index="1" role="tab" aria-selected="false" aria-label="Slide 2"><span
-              class="about-dot-progress"></span></button>
-          <button class="about-dot" data-about-index="2" role="tab" aria-selected="false" aria-label="Slide 3"><span
-              class="about-dot-progress"></span></button>
-          <button class="about-dot" data-about-index="3" role="tab" aria-selected="false" aria-label="Slide 4"><span
-              class="about-dot-progress"></span></button>
-          <button class="about-dot" data-about-index="4" role="tab" aria-selected="false" aria-label="Slide 5"><span
-              class="about-dot-progress"></span></button>
-          <button class="about-dot" data-about-index="5" role="tab" aria-selected="false" aria-label="Slide 6"><span
-              class="about-dot-progress"></span></button>
-          <button class="about-dot" data-about-index="6" role="tab" aria-selected="false" aria-label="Slide 7"><span
-              class="about-dot-progress"></span></button>
-        </div>
       </div>
 
       <div class="reveal">
@@ -1962,7 +1975,6 @@
         <h2 class="title">Care that feels <span class="serif">different.</span></h2>
 
         <div class="doctor-profile">
-          <div class="dr-badge-icon">👨‍⚕️</div>
           <div>
             <h3>Dr. G. JAGANRAJ, B.D.S</h3>
             <div class="dr-subtitle">General Dentist | 8 Years of Clinical Experience</div>
@@ -2174,24 +2186,31 @@
     <div class="work-header reveal">
       <div class="label">03 / OUR WORK</div>
       <h2 class="title">Real Results.<br><span class="serif">Real Confidence.</span></h2>
-      <p class="work-subtitle">Every smile tells a story. Explore authentic clinical outcomes from real patients — achieved with precision, modern dentistry, and gentle care.</p>
+      <p class="work-subtitle">Every smile tells a story. Explore authentic clinical outcomes from real patients —
+        achieved with precision, modern dentistry, and gentle care.</p>
     </div>
 
     <!-- MAIN OUTCOME SHOWCASE SLIDER -->
-    <div class="work-showcase reveal" id="workShowcase" aria-roledescription="carousel" aria-label="Real Dental Outcomes Gallery">
-      
+    <div class="work-showcase reveal" id="workShowcase" aria-roledescription="carousel"
+      aria-label="Real Dental Outcomes Gallery">
+
       <!-- Slide 1 -->
-      <article class="work-slide active" data-work-slide="0" role="group" aria-roledescription="slide" aria-label="Outcome 1 of 6: Comprehensive Smile Transformation">
+      <article class="work-slide active" data-work-slide="0" role="group" aria-roledescription="slide"
+        aria-label="Outcome 1 of 6: Comprehensive Smile Transformation">
         <div class="work-slide-media">
           <picture>
-            <source srcset="./Image/outcome-1-500w.webp 500w, ./Image/outcome-1-900w.webp 900w, ./Image/outcome-1.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
-            <img src="./Image/outcome-1-900w.webp" alt="Shanthi Dental Care - Comprehensive Smile Transformation" class="work-slide-img" width="900" height="900" loading="eager" decoding="async">
+            <source
+              srcset="./Image/outcome-1-500w.webp 500w, ./Image/outcome-1-900w.webp 900w, ./Image/outcome-1.webp 1200w"
+              sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-1-900w.webp" alt="Shanthi Dental Care - Comprehensive Smile Transformation"
+              class="work-slide-img" width="900" height="900" loading="eager" decoding="async">
           </picture>
         </div>
         <div class="work-slide-content">
           <span class="work-slide-badge">CASE STUDY · 01 / 06</span>
           <h3 class="work-slide-title">Comprehensive Smile Transformation</h3>
-          <p class="work-slide-desc">Complete cosmetic and functional smile alignment delivering natural aesthetics, strength and balanced bite harmony.</p>
+          <p class="work-slide-desc">Complete cosmetic and functional smile alignment delivering natural aesthetics,
+            strength and balanced bite harmony.</p>
           <ul class="work-slide-points">
             <li>✦ Full aesthetic symmetry &amp; shade matching</li>
             <li>✦ Preserved healthy natural tooth structure</li>
@@ -2204,17 +2223,22 @@
       </article>
 
       <!-- Slide 2 -->
-      <article class="work-slide" data-work-slide="1" role="group" aria-roledescription="slide" aria-label="Outcome 2 of 6: Precision Orthodontic Alignment">
+      <article class="work-slide" data-work-slide="1" role="group" aria-roledescription="slide"
+        aria-label="Outcome 2 of 6: Precision Orthodontic Alignment">
         <div class="work-slide-media">
           <picture>
-            <source srcset="./Image/outcome-2-500w.webp 500w, ./Image/outcome-2-900w.webp 900w, ./Image/outcome-2.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
-            <img src="./Image/outcome-2-900w.webp" alt="Shanthi Dental Care - Precision Orthodontic Alignment" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+            <source
+              srcset="./Image/outcome-2-500w.webp 500w, ./Image/outcome-2-900w.webp 900w, ./Image/outcome-2.webp 1200w"
+              sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-2-900w.webp" alt="Shanthi Dental Care - Precision Orthodontic Alignment"
+              class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="work-slide-content">
           <span class="work-slide-badge">CASE STUDY · 02 / 06</span>
           <h3 class="work-slide-title">Precision Orthodontic Alignment</h3>
-          <p class="work-slide-desc">Gentle and progressive orthodontic alignment correcting crowding and spacing for a confident, harmonious smile.</p>
+          <p class="work-slide-desc">Gentle and progressive orthodontic alignment correcting crowding and spacing for a
+            confident, harmonious smile.</p>
           <ul class="work-slide-points">
             <li>✦ Smooth, gradual teeth alignment</li>
             <li>✦ Improved dental hygiene &amp; bite health</li>
@@ -2227,17 +2251,22 @@
       </article>
 
       <!-- Slide 3 -->
-      <article class="work-slide" data-work-slide="2" role="group" aria-roledescription="slide" aria-label="Outcome 3 of 6: Aesthetic Crown & Bridge Restoration">
+      <article class="work-slide" data-work-slide="2" role="group" aria-roledescription="slide"
+        aria-label="Outcome 3 of 6: Aesthetic Crown & Bridge Restoration">
         <div class="work-slide-media">
           <picture>
-            <source srcset="./Image/outcome-3-500w.webp 500w, ./Image/outcome-3-900w.webp 900w, ./Image/outcome-3.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
-            <img src="./Image/outcome-3-900w.webp" alt="Shanthi Dental Care - Aesthetic Crown & Bridge Restoration" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+            <source
+              srcset="./Image/outcome-3-500w.webp 500w, ./Image/outcome-3-900w.webp 900w, ./Image/outcome-3.webp 1200w"
+              sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-3-900w.webp" alt="Shanthi Dental Care - Aesthetic Crown & Bridge Restoration"
+              class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="work-slide-content">
           <span class="work-slide-badge">CASE STUDY · 03 / 06</span>
           <h3 class="work-slide-title">Aesthetic Crown &amp; Bridge Restoration</h3>
-          <p class="work-slide-desc">Biocompatible, natural-looking ceramic restorations restoring natural appearance and durable chewing strength.</p>
+          <p class="work-slide-desc">Biocompatible, natural-looking ceramic restorations restoring natural appearance
+            and durable chewing strength.</p>
           <ul class="work-slide-points">
             <li>✦ High-strength biocompatible ceramic</li>
             <li>✦ Seamless color blend with adjacent teeth</li>
@@ -2250,17 +2279,22 @@
       </article>
 
       <!-- Slide 4 -->
-      <article class="work-slide" data-work-slide="3" role="group" aria-roledescription="slide" aria-label="Outcome 4 of 6: Anterior Cosmetic Rehabilitation">
+      <article class="work-slide" data-work-slide="3" role="group" aria-roledescription="slide"
+        aria-label="Outcome 4 of 6: Anterior Cosmetic Rehabilitation">
         <div class="work-slide-media">
           <picture>
-            <source srcset="./Image/outcome-4-500w.webp 500w, ./Image/outcome-4-900w.webp 900w, ./Image/outcome-4.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
-            <img src="./Image/outcome-4-900w.webp" alt="Shanthi Dental Care - Anterior Cosmetic Rehabilitation" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+            <source
+              srcset="./Image/outcome-4-500w.webp 500w, ./Image/outcome-4-900w.webp 900w, ./Image/outcome-4.webp 1200w"
+              sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-4-900w.webp" alt="Shanthi Dental Care - Anterior Cosmetic Rehabilitation"
+              class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="work-slide-content">
           <span class="work-slide-badge">CASE STUDY · 04 / 06</span>
           <h3 class="work-slide-title">Anterior Cosmetic Rehabilitation</h3>
-          <p class="work-slide-desc">Detailed aesthetic restoration correcting discoloration and enamel wear with lifelike dental translucency.</p>
+          <p class="work-slide-desc">Detailed aesthetic restoration correcting discoloration and enamel wear with
+            lifelike dental translucency.</p>
           <ul class="work-slide-points">
             <li>✦ Precision cosmetic bonding &amp; contouring</li>
             <li>✦ Lifelike light reflection &amp; texture</li>
@@ -2273,17 +2307,22 @@
       </article>
 
       <!-- Slide 5 -->
-      <article class="work-slide" data-work-slide="4" role="group" aria-roledescription="slide" aria-label="Outcome 5 of 6: Endodontic & Structural Tooth Rescue">
+      <article class="work-slide" data-work-slide="4" role="group" aria-roledescription="slide"
+        aria-label="Outcome 5 of 6: Endodontic & Structural Tooth Rescue">
         <div class="work-slide-media">
           <picture>
-            <source srcset="./Image/outcome-5-500w.webp 500w, ./Image/outcome-5-900w.webp 900w, ./Image/outcome-5.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
-            <img src="./Image/outcome-5-900w.webp" alt="Shanthi Dental Care - Endodontic & Structural Tooth Rescue" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+            <source
+              srcset="./Image/outcome-5-500w.webp 500w, ./Image/outcome-5-900w.webp 900w, ./Image/outcome-5.webp 1200w"
+              sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-5-900w.webp" alt="Shanthi Dental Care - Endodontic & Structural Tooth Rescue"
+              class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="work-slide-content">
           <span class="work-slide-badge">CASE STUDY · 05 / 06</span>
           <h3 class="work-slide-title">Endodontic &amp; Structural Tooth Rescue</h3>
-          <p class="work-slide-desc">Micro-precision root canal treatment and protective crown restoration preserving the natural tooth painlessly.</p>
+          <p class="work-slide-desc">Micro-precision root canal treatment and protective crown restoration preserving
+            the natural tooth painlessly.</p>
           <ul class="work-slide-points">
             <li>✦ 100% painless infection removal</li>
             <li>✦ Long-term natural tooth preservation</li>
@@ -2296,17 +2335,22 @@
       </article>
 
       <!-- Slide 6 -->
-      <article class="work-slide" data-work-slide="5" role="group" aria-roledescription="slide" aria-label="Outcome 6 of 6: Full Arch Restorative & Smile Design">
+      <article class="work-slide" data-work-slide="5" role="group" aria-roledescription="slide"
+        aria-label="Outcome 6 of 6: Full Arch Restorative & Smile Design">
         <div class="work-slide-media">
           <picture>
-            <source srcset="./Image/outcome-6-500w.webp 500w, ./Image/outcome-6-900w.webp 900w, ./Image/outcome-6.webp 1200w" sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
-            <img src="./Image/outcome-6-900w.webp" alt="Shanthi Dental Care - Full Arch Restorative & Smile Design" class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
+            <source
+              srcset="./Image/outcome-6-500w.webp 500w, ./Image/outcome-6-900w.webp 900w, ./Image/outcome-6.webp 1200w"
+              sizes="(max-width: 850px) 90vw, 42vw" type="image/webp">
+            <img src="./Image/outcome-6-900w.webp" alt="Shanthi Dental Care - Full Arch Restorative & Smile Design"
+              class="work-slide-img" width="900" height="900" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="work-slide-content">
           <span class="work-slide-badge">CASE STUDY · 06 / 06</span>
           <h3 class="work-slide-title">Full Arch Restorative &amp; Smile Design</h3>
-          <p class="work-slide-desc">Comprehensive multi-discipline dental care restoring full mouth function, oral health, and radiant confidence.</p>
+          <p class="work-slide-desc">Comprehensive multi-discipline dental care restoring full mouth function, oral
+            health, and radiant confidence.</p>
           <ul class="work-slide-points">
             <li>✦ Personalized comprehensive smile design</li>
             <li>✦ Restored chewing power &amp; clear speech</li>
@@ -2319,50 +2363,58 @@
       </article>
 
       <!-- Prev / Next Navigation Arrows -->
-      <button class="work-nav-btn prev" id="workPrev" aria-label="Previous outcome" title="Previous case (Left Arrow)">‹</button>
-      <button class="work-nav-btn next" id="workNext" aria-label="Next outcome" title="Next case (Right Arrow)">›</button>
+      <button class="work-nav-btn prev" id="workPrev" aria-label="Previous outcome"
+        title="Previous case (Left Arrow)">‹</button>
+      <button class="work-nav-btn next" id="workNext" aria-label="Next outcome"
+        title="Next case (Right Arrow)">›</button>
 
     </div>
 
     <!-- GALLERY CONTROLS & THUMBNAIL STRIP (All 6 Outcomes in One Gallery View) -->
     <div class="work-gallery-footer reveal">
       <div class="work-thumb-strip" id="workThumbStrip" role="tablist" aria-label="Outcome gallery thumbnails">
-        <button class="work-thumb-card active" data-work-index="0" role="tab" aria-selected="true" aria-label="Case 1: Comprehensive Smile Transformation">
+        <button class="work-thumb-card active" data-work-index="0" role="tab" aria-selected="true"
+          aria-label="Case 1: Comprehensive Smile Transformation">
           <img src="./Image/outcome-1-500w.webp" alt="Case 1 thumbnail" width="80" height="80">
           <div class="work-thumb-info">
             <small>CASE 01</small>
             <span>Smile Transformation</span>
           </div>
         </button>
-        <button class="work-thumb-card" data-work-index="1" role="tab" aria-selected="false" aria-label="Case 2: Orthodontic Alignment">
+        <button class="work-thumb-card" data-work-index="1" role="tab" aria-selected="false"
+          aria-label="Case 2: Orthodontic Alignment">
           <img src="./Image/outcome-2-500w.webp" alt="Case 2 thumbnail" width="80" height="80">
           <div class="work-thumb-info">
             <small>CASE 02</small>
             <span>Orthodontic Alignment</span>
           </div>
         </button>
-        <button class="work-thumb-card" data-work-index="2" role="tab" aria-selected="false" aria-label="Case 3: Crown & Bridge Restoration">
+        <button class="work-thumb-card" data-work-index="2" role="tab" aria-selected="false"
+          aria-label="Case 3: Crown & Bridge Restoration">
           <img src="./Image/outcome-3-500w.webp" alt="Case 3 thumbnail" width="80" height="80">
           <div class="work-thumb-info">
             <small>CASE 03</small>
             <span>Crown &amp; Bridge</span>
           </div>
         </button>
-        <button class="work-thumb-card" data-work-index="3" role="tab" aria-selected="false" aria-label="Case 4: Cosmetic Rehabilitation">
+        <button class="work-thumb-card" data-work-index="3" role="tab" aria-selected="false"
+          aria-label="Case 4: Cosmetic Rehabilitation">
           <img src="./Image/outcome-4-500w.webp" alt="Case 4 thumbnail" width="80" height="80">
           <div class="work-thumb-info">
             <small>CASE 04</small>
             <span>Cosmetic Care</span>
           </div>
         </button>
-        <button class="work-thumb-card" data-work-index="4" role="tab" aria-selected="false" aria-label="Case 5: Tooth Rescue">
+        <button class="work-thumb-card" data-work-index="4" role="tab" aria-selected="false"
+          aria-label="Case 5: Tooth Rescue">
           <img src="./Image/outcome-5-500w.webp" alt="Case 5 thumbnail" width="80" height="80">
           <div class="work-thumb-info">
             <small>CASE 05</small>
             <span>Tooth Rescue</span>
           </div>
         </button>
-        <button class="work-thumb-card" data-work-index="5" role="tab" aria-selected="false" aria-label="Case 6: Full Arch Design">
+        <button class="work-thumb-card" data-work-index="5" role="tab" aria-selected="false"
+          aria-label="Case 6: Full Arch Design">
           <img src="./Image/outcome-6-500w.webp" alt="Case 6 thumbnail" width="80" height="80">
           <div class="work-thumb-info">
             <small>CASE 06</small>
@@ -2374,12 +2426,18 @@
       <!-- Pagination Progress Dots & Timer Tag -->
       <div class="work-progress-bar">
         <div class="slider-pagination-dots" id="workDots" role="tablist" aria-label="Outcome slide dots">
-          <button class="slider-dot active" data-work-index="0" role="tab" aria-selected="true" aria-label="Slide 1"><span class="dot-progress"></span></button>
-          <button class="slider-dot" data-work-index="1" role="tab" aria-selected="false" aria-label="Slide 2"><span class="dot-progress"></span></button>
-          <button class="slider-dot" data-work-index="2" role="tab" aria-selected="false" aria-label="Slide 3"><span class="dot-progress"></span></button>
-          <button class="slider-dot" data-work-index="3" role="tab" aria-selected="false" aria-label="Slide 4"><span class="dot-progress"></span></button>
-          <button class="slider-dot" data-work-index="4" role="tab" aria-selected="false" aria-label="Slide 5"><span class="dot-progress"></span></button>
-          <button class="slider-dot" data-work-index="5" role="tab" aria-selected="false" aria-label="Slide 6"><span class="dot-progress"></span></button>
+          <button class="slider-dot active" data-work-index="0" role="tab" aria-selected="true"
+            aria-label="Slide 1"><span class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="1" role="tab" aria-selected="false" aria-label="Slide 2"><span
+              class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="2" role="tab" aria-selected="false" aria-label="Slide 3"><span
+              class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="3" role="tab" aria-selected="false" aria-label="Slide 4"><span
+              class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="4" role="tab" aria-selected="false" aria-label="Slide 5"><span
+              class="dot-progress"></span></button>
+          <button class="slider-dot" data-work-index="5" role="tab" aria-selected="false" aria-label="Slide 6"><span
+              class="dot-progress"></span></button>
         </div>
         <div class="slider-timer-indicator">
           <span class="timer-dot"></span>
@@ -2406,8 +2464,12 @@
             Landmark: Above Medplus Medical.</p><a href="https://share.google/Hw6gDKDmZr8VUI6CV" target="_blank"
             rel="noopener noreferrer">Get Directions ↗</a>
         </div>
-        <div class="detail"><small>PHONE</small><a href="tel:+919962237380">+91 99622 37380</a></div>
-        <div class="detail"><small>EMAIL</small><a href="mailto:drjaganraj2697@gmail.com">drjaganraj2697@gmail.com</a></div>
+        <div class="detail"><small>PHONE</small>
+          <a href="tel:+919962237380">+91 99622 37380</a>
+        </div>
+        <div class="detail"><small>EMAIL</small>
+          <a href="mailto:drjaganraj2697@gmail.com">drjaganraj2697@gmail.com</a>
+        </div>
         <div class="detail"><small>OPENING HOURS</small>
           <p>Mon to Sat - 9.30 a.m. to 9.00 p.m</p>
           <p>Sunday - 10.30 a.m. to 5.30 p.m</p>
@@ -2434,8 +2496,11 @@
   <!-- FLOATING DENTAL ASSISTANT BUTTON & INTERACTIVE CONCIERGE -->
   <button class="chat" id="chat" aria-label="Open Dental Assistant" title="Open Dental Assistant & Hours">
     <span class="chat-icon">
-      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M7 4.5C5 4.5 3.5 6 3.5 8.5C3.5 12 5 15.5 6.5 19.5C7.2 21.2 8.8 21.2 9.5 19C10.2 16.5 10.8 14.5 12 14.5C13.2 14.5 13.8 16.5 14.5 19C15.2 21.2 16.8 21.2 17.5 19.5C19 15.5 20.5 12 20.5 8.5C20.5 6 19 4.5 17 4.5C15.2 4.5 13.8 5.8 12 5.8C10.2 5.8 8.8 4.5 7 4.5Z" fill="rgba(255,255,255,0.18)" />
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M7 4.5C5 4.5 3.5 6 3.5 8.5C3.5 12 5 15.5 6.5 19.5C7.2 21.2 8.8 21.2 9.5 19C10.2 16.5 10.8 14.5 12 14.5C13.2 14.5 13.8 16.5 14.5 19C15.2 21.2 16.8 21.2 17.5 19.5C19 15.5 20.5 12 20.5 8.5C20.5 6 19 4.5 17 4.5C15.2 4.5 13.8 5.8 12 5.8C10.2 5.8 8.8 4.5 7 4.5Z"
+          fill="rgba(255,255,255,0.18)" />
         <path d="M19 1.5L19.7 3.3L21.5 4L19.7 4.7L19 6.5L18.3 4.7L16.5 4L18.3 3.3Z" fill="currentColor" />
         <path d="M21.5 6.5L21.9 7.4L22.8 7.8L21.9 8.2L21.5 9.1L21.1 8.2L20.2 7.8L21.1 7.4Z" fill="currentColor" />
         <path d="M3.5 14.5L4.2 16.3L6 17L4.2 17.7L3.5 19.5L2.8 17.7L1 17L2.8 16.3Z" fill="currentColor" />
@@ -2466,9 +2531,12 @@
 
     <!-- Interactive Navigation Tabs -->
     <div class="chatbox-tabs" role="tablist">
-      <button class="chatbox-tab active" data-chat-tab="timings" role="tab" aria-selected="true">🕒 Available Hours</button>
-      <button class="chatbox-tab" data-chat-tab="treatments" role="tab" aria-selected="false">🦷 Treatment Guide</button>
-      <button class="chatbox-tab" data-chat-tab="location" role="tab" aria-selected="false">📍 Contact &amp; Map</button>
+      <button class="chatbox-tab active" data-chat-tab="timings" role="tab" aria-selected="true">🕒 Available
+        Hours</button>
+      <button class="chatbox-tab" data-chat-tab="treatments" role="tab" aria-selected="false">🦷 Treatment
+        Guide</button>
+      <button class="chatbox-tab" data-chat-tab="location" role="tab" aria-selected="false">📍 Contact &amp;
+        Map</button>
     </div>
 
     <!-- Tab 1: Available Timings & Hours -->
@@ -2492,12 +2560,14 @@
 
       <div class="chatbox-tip">
         <span>💡</span>
-        <p><strong>Appointment Tip:</strong> Walk-ins are welcome! For specialized treatments like Root Canals or Implants, pre-booking guarantees zero waiting time.</p>
+        <p><strong>Appointment Tip:</strong> Walk-ins are welcome! For specialized treatments like Root Canals or
+          Implants, pre-booking guarantees zero waiting time.</p>
       </div>
 
       <div class="chatbox-quick-actions">
         <a class="chatbox-btn primary" href="tel:+919962237380">📞 Call Now: +91 99622 37380</a>
-        <a class="chatbox-btn secondary" href="#contact" onclick="document.getElementById('chatbox').classList.remove('open')">📅 Book Consultation</a>
+        <a class="chatbox-btn secondary" href="#contact"
+          onclick="document.getElementById('chatbox').classList.remove('open')">📅 Book Consultation</a>
       </div>
     </div>
 
@@ -2515,9 +2585,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Complete intraoral clinical examination, high-resolution digital X-rays to diagnose underlying cavities, bone health, and personalized care planning.</p>
+            <p><strong>What it involves:</strong> Complete intraoral clinical examination, high-resolution digital
+              X-rays to diagnose underlying cavities, bone health, and personalized care planning.</p>
             <div class="item-tags"><span>Diagnosis</span><span>Digital X-Ray</span><span>Zero Pain</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2529,9 +2601,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Permanent titanium fixture anchored into the jawbone with a lifelike ceramic crown. Restores 100% natural chewing strength and stops bone loss.</p>
+            <p><strong>What it involves:</strong> Permanent titanium fixture anchored into the jawbone with a lifelike
+              ceramic crown. Restores 100% natural chewing strength and stops bone loss.</p>
             <div class="item-tags"><span>Permanent</span><span>Titanium</span><span>Natural Feel</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2543,9 +2617,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Gentle ultrasonic scaling removes hardened calculus, plaque, and nicotine/tea stains, followed by prophy-paste polishing for healthy gums and fresh breath.</p>
+            <p><strong>What it involves:</strong> Gentle ultrasonic scaling removes hardened calculus, plaque, and
+              nicotine/tea stains, followed by prophy-paste polishing for healthy gums and fresh breath.</p>
             <div class="item-tags"><span>Ultrasonic</span><span>Gum Health</span><span>Stain Removal</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2557,9 +2633,12 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Painless removal of infected pulp from the inner tooth roots using rotary endodontics, thorough bio-cleaning, sealing, and reinforcement with a protective crown.</p>
-            <div class="item-tags"><span>Painless</span><span>Save Natural Tooth</span><span>Rotary Endodontics</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <p><strong>What it involves:</strong> Painless removal of infected pulp from the inner tooth roots using
+              rotary endodontics, thorough bio-cleaning, sealing, and reinforcement with a protective crown.</p>
+            <div class="item-tags"><span>Painless</span><span>Save Natural Tooth</span><span>Rotary Endodontics</span>
+            </div>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2571,9 +2650,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Modern ceramic/metal braces or invisible clear aligners that gently guide crooked, spaced, or crowded teeth into symmetrical alignment.</p>
+            <p><strong>What it involves:</strong> Modern ceramic/metal braces or invisible clear aligners that gently
+              guide crooked, spaced, or crowded teeth into symmetrical alignment.</p>
             <div class="item-tags"><span>Invisible Aligners</span><span>Straight Smile</span><span>Bite Fix</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2585,9 +2666,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Custom-milled Zirconia/Ceramic crowns covering cracked or heavily filled teeth, and fixed bridges replacing one or more missing teeth seamlessly.</p>
+            <p><strong>What it involves:</strong> Custom-milled Zirconia/Ceramic crowns covering cracked or heavily
+              filled teeth, and fixed bridges replacing one or more missing teeth seamlessly.</p>
             <div class="item-tags"><span>Zirconia</span><span>High Durability</span><span>Bite Restoration</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2599,9 +2682,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Child-friendly checkups, gentle cavity management, fluoride treatments, and pit/fissure sealants in a welcoming, stress-free environment.</p>
+            <p><strong>What it involves:</strong> Child-friendly checkups, gentle cavity management, fluoride
+              treatments, and pit/fissure sealants in a welcoming, stress-free environment.</p>
             <div class="item-tags"><span>Child Friendly</span><span>Preventive Care</span><span>Zero Fear</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2613,9 +2698,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Aesthetic composite resin matched to your exact tooth shade, curing instantly under UV light to repair decay and minor enamel chipping invisibly.</p>
+            <p><strong>What it involves:</strong> Aesthetic composite resin matched to your exact tooth shade, curing
+              instantly under UV light to repair decay and minor enamel chipping invisibly.</p>
             <div class="item-tags"><span>Invisible</span><span>Mercury Free</span><span>Same Day</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2627,9 +2714,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Comprehensive cosmetic facial and dental aesthetic analysis, porcelain veneers, contouring, and shade enhancement for your dream smile.</p>
+            <p><strong>What it involves:</strong> Comprehensive cosmetic facial and dental aesthetic analysis, porcelain
+              veneers, contouring, and shade enhancement for your dream smile.</p>
             <div class="item-tags"><span>Cosmetic Makeover</span><span>Veneers</span><span>Symmetry</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2641,9 +2730,12 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Multi-disciplinary reconstructive plan rebuilding severely worn, missing, or broken teeth to restore youthfulness, chewing power, and oral health.</p>
-            <div class="item-tags"><span>Complete Rebuild</span><span>Joint &amp; Bite Alignment</span><span>Full Health</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <p><strong>What it involves:</strong> Multi-disciplinary reconstructive plan rebuilding severely worn,
+              missing, or broken teeth to restore youthfulness, chewing power, and oral health.</p>
+            <div class="item-tags"><span>Complete Rebuild</span><span>Joint &amp; Bite Alignment</span><span>Full
+                Health</span></div>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2655,9 +2747,11 @@
             <span class="item-arrow">▾</span>
           </summary>
           <div class="item-body">
-            <p><strong>What it involves:</strong> Ergonomic, comfortable custom acrylic or cast-partial dentures crafted to replace full arch teeth with snug fit and natural aesthetics.</p>
+            <p><strong>What it involves:</strong> Ergonomic, comfortable custom acrylic or cast-partial dentures crafted
+              to replace full arch teeth with snug fit and natural aesthetics.</p>
             <div class="item-tags"><span>Comfort Fit</span><span>Full Arch</span><span>Confident Chewing</span></div>
-            <a href="#treatments" class="item-link" onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
+            <a href="#treatments" class="item-link"
+              onclick="document.getElementById('chatbox').classList.remove('open')">View Treatment Card ↓</a>
           </div>
         </details>
 
@@ -2669,11 +2763,13 @@
       <div class="chat-location-card">
         <div class="loc-badge">📍 CLINIC ADDRESS</div>
         <p><strong>Shanthi Dental Care</strong><br>
-        No.4/240, 1st Floor, Annai Anjugam Nagar Busstop,<br>
-        Nandambakkam, Kundrathur, Chennai - 600069.<br>
-        <span class="landmark-tag">🏷️ Landmark: Above Medplus Medical</span></p>
+          No.4/240, 1st Floor, Annai Anjugam Nagar Busstop,<br>
+          Nandambakkam, Kundrathur, Chennai - 600069.<br>
+          <span class="landmark-tag">🏷️ Landmark: Above Medplus Medical</span>
+        </p>
 
-        <a class="chatbox-btn outline" href="https://share.google/Hw6gDKDmZr8VUI6CV" target="_blank" rel="noopener noreferrer">
+        <a class="chatbox-btn outline" href="https://share.google/Hw6gDKDmZr8VUI6CV" target="_blank"
+          rel="noopener noreferrer">
           🗺️ Open Google Maps Directions ↗
         </a>
       </div>
@@ -2687,7 +2783,7 @@
   </div>
 
 
-    <script>
+  <script>
     /* ==========================================
        SCROLL REVEAL & HERO ANIMATION
        ========================================== */
@@ -2827,7 +2923,7 @@
       }
     ];
 
-    const SLIDE_DURATION = 10000; // EXACTLY 10 seconds per slide
+    const SLIDE_DURATION = 3000; // 3 seconds per slide
 
     /* ==========================================
        INTERACTIVE DENTAL CONCIERGE & LIVE HOURS
@@ -2940,22 +3036,24 @@
         slide.setAttribute('aria-hidden', !isActive);
       });
 
-      aboutDots.forEach((dot, i) => {
-        const isActive = i === currentAboutIndex;
-        dot.classList.toggle('active', isActive);
-        dot.setAttribute('aria-selected', isActive);
+      if (aboutDots && aboutDots.length) {
+        aboutDots.forEach((dot, i) => {
+          const isActive = i === currentAboutIndex;
+          dot.classList.toggle('active', isActive);
+          dot.setAttribute('aria-selected', isActive);
 
-        const progress = dot.querySelector('.about-dot-progress');
-        if (progress) {
-          progress.style.transition = 'none';
-          progress.style.width = '0%';
-          if (isActive && !reduce) {
-            void progress.offsetWidth; // Force reflow
-            progress.style.transition = `width ${SLIDE_DURATION}ms linear`;
-            progress.style.width = '100%';
+          const progress = dot.querySelector('.about-dot-progress');
+          if (progress) {
+            progress.style.transition = 'none';
+            progress.style.width = '0%';
+            if (isActive && !reduce) {
+              void progress.offsetWidth; // Force reflow
+              progress.style.transition = `width ${SLIDE_DURATION}ms linear`;
+              progress.style.width = '100%';
+            }
           }
-        }
-      });
+        });
+      }
 
       // Preload next image
       const nextIdx = (currentAboutIndex + 1) % aboutSlides.length;
@@ -2976,15 +3074,17 @@
     }
 
     // Dot clicks
-    aboutDots.forEach(dot => {
-      dot.onclick = (e) => {
-        e.stopPropagation();
-        const targetIndex = parseInt(dot.getAttribute('data-about-index'), 10) || 0;
-        if (aboutAutoTimer) clearInterval(aboutAutoTimer);
-        activateAboutSlide(targetIndex);
-        startAboutAutoSlide();
-      };
-    });
+    if (aboutDots && aboutDots.length) {
+      aboutDots.forEach(dot => {
+        dot.onclick = (e) => {
+          e.stopPropagation();
+          const targetIndex = parseInt(dot.getAttribute('data-about-index'), 10) || 0;
+          if (aboutAutoTimer) clearInterval(aboutAutoTimer);
+          activateAboutSlide(targetIndex);
+          startAboutAutoSlide();
+        };
+      });
+    }
 
     // Prev / Next arrow buttons
     if (aboutPrevBtn) {
